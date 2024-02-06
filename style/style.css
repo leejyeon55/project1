@@ -47,75 +47,68 @@ header a{
 }
 nav{
     width: 100%;
-    height: calc(var(--row) * 7);
+    height: calc(var(--row) * 9);
     position: relative;
     flex-direction: column;
 }
 .nav{
     width: 100%;
     gap: var(--gu2);
-    height: calc(var(--row) * 2);
-    position: absolute;
-    right: 0;
-    top: var(--row);
+    height: calc(var(--row) * 1);
+    margin-top: var(--row);
+    justify-content: flex-end;
 }
 .nav li{
-     /* border-bottom: 3px solid var(--primary3); */
+     border-bottom: 3px solid var(--primary3);
+}
+.gnb{
+    padding-top: calc(var(--row) * 3);
+    width: 100%;
+    height: calc(var(--row) * 7);
+}
+.gnb li{
+    flex: 1 1 calc(100% / 8);
+    justify-content: space-between;
+    
+}
+.gnb li>a{
+    display: block;
+    text-align: center;
 }
 .dep_inner{
+    margin: auto;
     width: 100%;
     height: 0;
+    position: absolute;
+    background: #fff;
+    left: 0;
     overflow: hidden;
     transition: height 0.2s;
+    z-index: 2;
 }
-.dep1 >a{
+.dep1:hover .dep_inner{
+    height: calc(var(--row) * 8);
+}
+.dep1 > a{
     display: flex;
 }
 .dep1{
-    flex: 1 1 12.5%;
+    padding-top: calc(var(--row) * 0.7);
 }
 .dep2{
-    width: 80rem;
-    margin: auto;
-}
-.dep1:hover .dep_inner{
-    height: 300px;
+    width: 100%;
 }
 .logo a{
+    height: calc(var(--row) * 4);
     display: block;
-    background: url(/imgs/logo.png) no-repeat center/100%;
+    background: url(/imgs/logo.png) no-repeat;
     text-indent: -999999px;
     overflow: hidden;
     font-size: 0;
 }
-.main_nav{
-    width: calc(var(--unit1) * 10);
-    height: var(--row);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: calc(var(--row) * 1.5);
-}
-.main_nav li:hover{
-    border-bottom: 3px solid #007cc37a;
-}
 .sub_nav{
-    width:  var(--unit2);
-    height: var(--row);
-    position: absolute;
-    right: 0;
-    bottom: -3px;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: calc(var(--row) * 1.5);
+    width: calc(var(--col) * 2.2);
 }
-.sub_nav li a{
-    padding-left: 1.5rem;
-}
-
 /* ====================================
     ======= main ======    
 ==================================== */
