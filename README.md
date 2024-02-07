@@ -1,6 +1,6 @@
 
 # 인천광역시립박물관<!-- omit in toc -->
-### [기획서 보기] (./project1.pdf)
+### [기획서 보기](./project1.pdf)
 > 인천광역시립박물관을 **리디자인 후 구현**한 프로젝트입니다.
 
 > 배포화면 보기 [사이트보기](leejyeon55.github.io/project1/).
