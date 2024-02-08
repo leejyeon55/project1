@@ -162,6 +162,10 @@ nav{
 }
 .sub_nav{
     width: calc(var(--col) * 2.2);
+    
+}
+.sub_nav ul{
+    padding-top: 0.2rem;
 }
 /* ====================================
     ======= main ======    
