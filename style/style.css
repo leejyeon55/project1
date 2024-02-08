@@ -123,11 +123,11 @@ nav{
     animation: i 1s ease infinite;
 }
 @keyframes i {
-    70% { transform:translateY(0%); }
-    80% { transform:translateY(-15%); }
-    90% { transform:translateY(0%); }
-    95% { transform:translateY(-7%); }
-    97% { transform:translateY(0%); }
+    10% { transform:translateY(0%); }
+    30% { transform:translateY(-15%); }
+    50% { transform:translateY(0%); }
+    70% { transform:translateY(-7%); }
+    80% { transform:translateY(0%); }
     99% { transform:translateY(-3%); }
     100% { transform:translateY(0); }
 }
@@ -158,7 +158,7 @@ nav{
 .logo a{
     height: calc(var(--row) * 4);
     display: block;
-    background: url(/imgs/logo.png) no-repeat;
+    background: url(/imgs/logo1.png) no-repeat;
     text-indent: -999999px;
     overflow: hidden;
     font-size: 0;
