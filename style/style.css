@@ -134,7 +134,7 @@ nav{
 .dep2 p{
  text-align: center;
  font-size: 1.4rem;
- padding-top: calc(var(--row) * 3);
+ padding-top: var(--row);
  line-height: 2rem;
  color: var(--text1);
 }
@@ -144,13 +144,16 @@ nav{
     left: 50%;
     transform: translateX(-50%);
 }
+
+.intro p {
+    padding-top: calc(var(--row) * 2.6);
+}
 .dep2 i{
+    width: 100%;
+    padding-top: 5rem;
     font-size: 5.5rem;
     color: #007cc383;
-    position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
 }
 .logo a{
     height: calc(var(--row) * 4);
