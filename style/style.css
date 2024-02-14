@@ -805,8 +805,8 @@ main{
 }
 .content4::before{
     content: '';
-    width: 75%;
-    height: 65%;
+    width: 90%;
+    height: 90%;
     position: absolute;
     top:-40px;
     left: -350px;
@@ -818,9 +818,9 @@ main{
 .content4::after{
     content: '';
     width: 100%;
-    height: 75%;
+    height: 90%;
     position: absolute;
-    bottom: 100px;
+    bottom: 20px;
     right: -350px;
     background:url(../imgs/backgroundimg.jpg) no-repeat;
     background-size: 100%;
@@ -881,14 +881,14 @@ main{
     color: var(--text1);
 }
 .content4 .controls img[alt="prev"]{
-    top: 38%;
-    transform: translateY(-35%);
+    top: 58%;
+    transform: translateY(-50%);
     position: absolute;
     left: -2.5%;
 }
 .content4 .controls img[alt="next"]{
-    top: 38%;
-    transform: translateY(-35%);
+    top: 58%;
+    transform: translateY(-50%);
     position: absolute;
     right: -2.5%;
 }
@@ -1028,7 +1028,7 @@ color: var(--text4);
     height: 0;
     position: absolute;
     background: #ffffff;
-    top:-220px;
+    bottom:340px;
     left: 0;
     overflow: hidden;
     transition: padding 0.5s;
