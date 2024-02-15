@@ -848,6 +848,10 @@ main{
     box-shadow: 3px 1px 8px rgba(0,0,0,.2);
     background-color: #fff;
 }
+.photo_box:hover{
+    box-shadow: 3px 1px 14px rgba(0,0,0,.5);
+    transition: box-shadow .5s;
+}
 
 .gallary1{
     background: url(../imgs/photogallery1.png) no-repeat center;
@@ -993,30 +997,26 @@ color: var(--text4);
 }
 .footer p::before{
     position: absolute;
-    content: '';
+    content: '\f106';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color:#007cc381;
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #007cc381;
-    opacity: .8;
-    right: 20px;
-    top: 5px;
+    right: 35px;
+    top: 0;
 }
 
 .footer_nav a:hover p::before {
     position: absolute;
-    content: '';
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color:#007cc381;
     width: 0;
     height: 0;
-    border-top: 10px solid #007cc381;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .8;
-    right: 20px;
-    top: 15px;
+    right: 35px;
+    top: 0px;
 }
 
 /* ====================================
