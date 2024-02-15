@@ -313,7 +313,7 @@ main{
     height: 4px;
     background-image: linear-gradient(to left, #007cc3, #00ae9dad);
     top: -15px;
-    left: -20px;
+    left: 10px;
     opacity: .5;
 }
 .exhbox img{
@@ -599,46 +599,51 @@ main{
     font-weight: bold;
     color: var(--text1);
     opacity: .8;
+    cursor: pointer;
 }
-.notice1{
-    margin-top: var(--);
-    line-height: calc(var(--row) * 2.5);
+.notice1,
+.notice3{
+    line-height: calc(var(--row) * 2);
+    border-bottom: 2px solid #007cc33d;
+    width: 100%;
 }
-.notice1 li:nth-child(2){
-    height: calc(var(--row) * 2);
-    width: calc(var(--unit6) - 4rem);
-    border-bottom: 1px solid #007cc33d;
-}
-.notice1 li h4{
+.notice1 li h4,
+.notice3 li h4
+{
     color: var(--text2);
     margin-top: calc(var(--row) * 0.5);
 }
-.notice1 li span{
+.notice1 li span,
+.notice3 li span{
     color: var(--text4);
     font-size: 1.4rem;
 }
-.notice2{
+.notice2,
+.notice4{
     margin-top: var(--row);
     position: relative;
 }
-.notice2 li{
+
+.notice2 li,
+.notice4 li{
     margin-bottom: var(--row);
 }
-.notice2 li p{
+.notice2 li p,
+.notice4 li p{
     display: flex;
     justify-content: space-between;
     margin-bottom: calc(var(--row) * 1.5);
 }
-.notice2 li span{
+.notice2 li span,
+.notice4 li span
+{
     color: var(--text4);
     font-size: 1.4rem;
 }
-
 .menubox1 .p{
     color: var(--text2);
     font-size: 1.6rem;
 }
-
 .menubox1 h2{
     font-size: 3rem;
     color: var(--primary1);
@@ -654,46 +659,14 @@ main{
     clear: both;
     position: absolute;
     display: none;
+    width: 93%;
 }
 .content3_box #one:checked ~ .menubox1 .museum{
     display: block;
 }
 .museum_notice{
     position: absolute;
-}
-.notice3{
-    margin-top: var(--);
-    line-height: calc(var(--row) * 2.5);
-}
-.notice3 li:nth-child(2){
-    height: calc(var(--row) * 2);
-    width: calc(var(--unit6) - 4rem);
-    border-bottom: 1px solid #007cc33d;
-}
-.notice3 li h4{
-    color: var(--text2);
-    margin-top: calc(var(--row) * 0.5);
-}
-.notice3 li span{
-    color: var(--text4);
-    font-size: 1.4rem;
-}
-.notice4{
-    margin-top: var(--row);
-    position: relative;
-}
-.notice4 li{
-    margin-bottom: var(--row);
-}
-.notice4 li p{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: calc(var(--row) * 1.5);
-}
-
-.notice4 li span{
-    color: var(--text4);
-    font-size: 1.4rem;
+    width: 93%;
 }
 .museum_notice{
     clear: both;
@@ -828,8 +801,7 @@ main{
     position: absolute;
     top:-40px;
     left: -350px;
-    background-image: linear-gradient(to left, #007cc3, #00ae9dad);
-    opacity: .8;
+    background-image: linear-gradient(to left, #007cc370, #00ae9d50);
     z-index: -1;
 }
 
@@ -858,7 +830,7 @@ main{
     font-size: 4rem;
     width: 100%;
     height: calc(var(--row) * 1.5);
-    text-shadow: 4px 4px 1px #007cc3b9;
+    text-shadow: 4px 4px 1px #007cc375;
 }
 .photo_box{
     width: calc(var(--col) * 3.3);
