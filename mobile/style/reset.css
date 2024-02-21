@@ -1,0 +1,166 @@
+@charset "utf-8";
+@import url(./fonts.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom */
+/* 원하는 폰트 크기 (10px) / 브라우저 폰트크기(16xp = 0.625 * 100%) = 62.5% */
+/* 웹문서에는 rem(root em) 단위 사용 / 16px = 1.6rem / 10px = 1rem */
+html{
+    font-size: 62.5%;
+    line-height: 1.75;
+    font-family: 'Pretendard', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    = 웹 브라우저에서 글꼴 계단 현상 완화시켜주는 코드 */
+*{
+    box-sizing: border-box;
+}
+/* ====================================
+    ======= 전역변수 ======    
+==================================== */
+
+:root{
+    --primary1:#007cc3;
+    --primary2:#00ae9c;
+    --primary3:#ff9a18;
+    --text1:#404040;
+    --text2:#333;
+    --text3:#555;
+    --text4:#888;
+    --white:#fff;
+    /* 컬럼이랑 거터 */
+    --col: 13.6rem;
+	--gu: 1rem;
+	--gu2: calc(var(--gu) * 2);
+	--unit: calc(var(--col) + var(--gu2));
+	--row: 2.8rem;
+	--n10: 10;
+	--n9: 9;
+	--n8: 8;
+	--n7: 7;
+	--n6: 6;
+	--n5: 5;
+	--n4: 4;
+	--n3: 3;
+	--n2: 2;
+	--n1: 1;
+	--unit10: calc((var(--unit) * var(--n10) - var(--gu2)));
+	--unit9: calc((var(--unit) * var(--n9) - var(--gu2)));
+	--unit8: calc((var(--unit) * var(--n8) - var(--gu2)));
+	--unit7: calc((var(--unit) * var(--n7) - var(--gu2)));
+	--unit6: calc((var(--unit) * var(--n6) - var(--gu2)));
+	--unit5: calc((var(--unit) * var(--n5) - var(--gu2)));
+	--unit4: calc((var(--unit) * var(--n4) - var(--gu2)));
+	--unit3: calc((var(--unit) * var(--n3) - var(--gu2)));
+	--unit2: calc((var(--unit) * var(--n2) - var(--gu2)));
+	--unit1: calc((var(--unit) * var(--n1) - var(--gu2)));
+}
+a{
+    text-decoration: none;
+    font-family: 'Pretendard','Arial', sans-serif;
+    font-size: 1.6rem;
+}
+body{
+    font-family: 'Pretendard','Arial', sans-serif;
+}
+/* ====================================
+    ======= global classes ======    
+==================================== */
+.h1,h1{
+    font-size: 4.8rem;
+    font-weight: 200;
+}
+.h2,h2{
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+.h3,h3{
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.h4,h4{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.h5,h5{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.h6,h6{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.text{
+    font-size: 1.6rem; 
+    font-weight: 500;
+    line-height: 1.75;
+}
+.link{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* snippet : 사용자 정의 축약 명령어(줄임말) (코드를 단축키로 지정하는것) */
+/* ctrl + shift + p > snippet 검색 > configure > 사용할 확장자 열기 */
+
+.df{
+    display: flex;
+}
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
+
