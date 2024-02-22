@@ -75,8 +75,9 @@ header a{
 .gnb{
     padding-top: calc(var(--row) * 1.5);
     width: 100%;
-    height: calc(var(--row) * 2);
+    height: calc(var(--row) * 3.5);
     justify-content: space-between;
+    align-items: center;
 }
 .logo{
     width: 77%;
@@ -96,7 +97,7 @@ header a{
 .icon a i{
     font-size: 4.8rem;
     color: #007cc380;
-    line-height: 5.8rem;
+    line-height: 1.8rem;
 }
 /* ====================================
     ======= main ======    
@@ -107,8 +108,8 @@ main{
 }
 .banner{
     width: 100%;
-    height: calc(var(--row) * 11);
-    background:url(../imgs/main_banner2.png) no-repeat center/100%;
+    height: calc(var(--row) * 13);
+    background:url(../imgs/main_banner2.png) no-repeat center/150%;
     position: relative;
 }
 .bar{
@@ -172,7 +173,7 @@ main{
 .exh{
     color: #007cc380;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.2rem;
     align-items: center;
     position: absolute;
     bottom: var(--row);
@@ -191,6 +192,7 @@ main{
     position: absolute;
     bottom: var(--row);
     right: 0;
+    width: 15%;
 }
 .exhibit{
     justify-content: space-between;
@@ -285,11 +287,11 @@ main{
 ==================================== */
 .content4{
     width: 100%;
-    height: calc(var(--row) * 21);
+    height: calc(var(--row) * 19);
 }
 .menubox1{
     width: 100%;
-    height: calc(var(--row) * 14);
+    height: calc(var(--row) * 12);
     border-top: 2px solid #007cc33d;
     border-bottom: 2px solid #007cc33d;
     margin-top: var(--row);
@@ -327,10 +329,14 @@ main{
     border-bottom: 2px solid #007cc33d;
     width: 100%;
 }
-.notice1 li h4,
+.notice1 li h4{
+    color: var(--text2);
+    margin-top: calc(var(--row) * 0.5);
+}
 .notice3 li h4{
     color: var(--text2);
     margin-top: calc(var(--row) * 0.5);
+    font-size: 1.8rem;
 }
 .notice1 li span,
 .notice3 li span{
@@ -347,21 +353,25 @@ main{
 .notice4 li{
     margin-bottom: var(--row);
 }
-.notice2 li p,
+.notice2 li p{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: calc(var(--row) * 1.5); */
+}
 .notice4 li p{
     display: flex;
     justify-content: space-between;
-    margin-bottom: calc(var(--row) * 1.5);
 }
+
 .notice2 li span,
 .notice4 li span
 {
     color: var(--text4);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 .menubox1 .p{
     color: var(--text2);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .menubox1 h2{
     font-size: 3rem;
@@ -414,7 +424,7 @@ main{
 ==================================== */
 .content5{
     width: 100%;
-    height: calc(var(--row) * 18);
+    height: calc(var(--row) * 15);
 }
 .menubox2top h2{
     font-size: 3.2rem;
@@ -424,11 +434,11 @@ main{
 }
 .popupzone{
     width: 100%;
-    height: calc(var(--row) * 10);
+    height: calc(var(--row) * 8);
     margin-bottom: var(--row);
     padding: 2rem;
     background: url(../imgs/popupzone.jpg) no-repeat top;
-    background-size: 115%;
+    background-size: 100%;
     position: relative;
     z-index: 2;
 }
