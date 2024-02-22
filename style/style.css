@@ -835,12 +835,15 @@ main{
 .photo_box{
     width: calc(var(--col) * 3.3);
     min-height: calc(var(--row) * 9.5);
-    box-shadow: 3px 1px 8px rgba(0,0,0,.2);
+    box-shadow: 3px 1px 8px rgba(0,0,0,0.2);
     background-color: #fff;
+    transition: box-shadow 0.5s, transform 0.5s;
 }
 .photo_box:hover{
-    box-shadow: 3px 1px 14px rgba(0,0,0,.5);
-    transition: box-shadow .5s;
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 1px 14px rgba(0,0,0,0.5);
+    box-shadow: 13px 12px 44px rgba(0,0,0,0.3);
+
 }
 
 .gallary1{
