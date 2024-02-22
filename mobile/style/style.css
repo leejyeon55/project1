@@ -836,6 +836,7 @@ footer{
     height:  calc(var(--row) * 11);
 }
 .f4 p{
+    width: min(100%,640px);
     color: var(--text1);
     font-size: 1.6rem;
     line-height: 4.5rem;
@@ -848,14 +849,11 @@ footer{
     ======= f_section5 ======    
 ==================================== */
 .f_section5{
-    height: calc(var(--row) * 3);
+    height: calc(var(--row) * 2);
     width: 100%;
 }
 
 .f_section5 span{
-    width: min(100%,640px);
-    line-height: 6rem;
-    margin-top: 2rem;
     color: var(--text4);
     opacity: .7;
     }
