@@ -539,11 +539,11 @@ main{
     text-shadow: 4px 4px 1px #007cc375;
 }
 .photo{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .photo_box{
     width: 47%;
-    height: calc(var(--row) * 10);
+    height: calc(var(--row) * 9);
     box-shadow: 3px 1px 8px rgba(0,0,0,.2);
     background-color: #fff;
 }
@@ -556,16 +556,17 @@ main{
     background: url(../imgs/photogallery1.png) no-repeat top;
     background-size: 100%;
     width: 100%;
-    height: calc(var(--row) * 7);
+    height: calc(var(--row) * 6);
 }
 .gallary2{
     background: url(../imgs/photogallery2.png) no-repeat top;
     background-size: 135%;
     width: 100%;
-    height: calc(var(--row) * 7);
+    height: calc(var(--row) * 6);
 }
 
 .photo_box p{
+    padding: 5%;
     font-size: 1.6rem;
     line-height: 2.8rem;
     text-align: center;
@@ -575,16 +576,16 @@ main{
     top: 58%;
     transform: translateY(-50%);
     position: absolute;
-    left: -6.5%;
+    left: 0;
 }
 .content6 .controls img[alt="next"]{
     top: 58%;
     transform: translateY(-50%);
     position: absolute;
-    right: -6.5%;
+    right: 0;
 }
 .content6 .controls img{
-    width: 60px;
+    width: 10%;
 }
 /* ====================================
     ======= footer ======    
