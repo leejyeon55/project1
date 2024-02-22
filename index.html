@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="./style/style.css" >
   </head>
   <body>
+    <div class="skip_menus">
+      <a href="#main" class="skip_menu">메인으로 이동</a>
+      <a href="#content1" class="skip_menu">전시 소개로 이동</a>
+      <a href="#content2" class="skip_menu">전시 소개로 이동</a>
+      <a href="#content3" class="skip_menu">박물관 연보로 이동</a>
+      <a href="#content4" class="skip_menu">포토갤러리로 이동</a>
+    </div>
     <div class="popup">
       해당 사이트는 학습용으로 제작되었으며 인천광역시립박물관과 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다. <span>닫기</span>
     </div>
@@ -150,7 +157,7 @@
         </div>
         </nav>
       </header>
-      <main>
+      <main id="main">
         <div class="main_banner">
           <div class="banner">
             <div class="controls">
@@ -200,7 +207,7 @@
           </div>
         </div>
         <section>
-          <div class="content1">
+          <div id="content1" class="content1">
             <div class="exhbox df">
               <div class="exh">전시</div>
               <img src="./imgs/bar1.png" alt="bar1">
@@ -257,7 +264,7 @@
         </section>
         <!-- section1 -->
         <section>
-          <div class="content2 df">
+          <div id="content2" class="content2 df">
             <div class="exhbox2">
               <div class="exhbox df">
                 <div class="exh">온라인 전시</div>
@@ -304,7 +311,7 @@
         <!-- section2 -->
         <section>
             <!-- <div class="content3_text">박물관 소식</div> -->
-          <div class="content3 df">
+          <div id="content3" class="content3 df">
             <div class="content3_box df">
                 <input type="radio" name="tabs" id="one" checked >
                 <input type="radio" name="tabs" id="two" >
@@ -447,7 +454,7 @@
         </section>
         <!-- section3 -->
         <section>
-          <div class="content4 df">
+          <div id="content4" class="content4 df">
           <div class="content4_text">포토 갤러리</div>
             <div class="content4_box df">
               <div class="photo_box">
