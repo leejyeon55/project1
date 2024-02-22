@@ -10,7 +10,7 @@
 /* ====================================
     ======= popup ======    
 ==================================== */
-.popup{
+/* .popup{
     position: fixed;
     width: min(50%, 500px);
     padding: 5% 2%;
@@ -31,14 +31,14 @@
     color: #fff;
     cursor: pointer;
     user-select: none;
-}
+} */
 
 /* ====================================
     ======= header ======    
 ==================================== */
 header{
     width: 100%;
-    height: calc(var(--row) * 6);
+    height: calc(var(--row) * 5);
     position: relative;
 }
 header a{
@@ -48,16 +48,16 @@ header a{
 /* nav */
 .top_nav{
     width: 100%;
-    height: calc(var(--row) * 1);
-    margin-top: var(--row);
+    height: var(--row);
     position: relative;
+    padding-top: 3%;
 }
 .top_nav::before{
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -60%;
     left: 0;
-    width: 640px;
+    width: 100%;
     height: 1px;
     background: #007cc350;
 }
@@ -73,13 +73,13 @@ header a{
 }
 
 .gnb{
-    padding-top: calc(var(--row) * 2);
+    padding-top: calc(var(--row) * 1.5);
     width: 100%;
     height: calc(var(--row) * 2);
     justify-content: space-between;
 }
 .logo{
-    width: 82%;
+    width: 77%;
 }
 .logo a{
     height: calc(var(--row) * 2.5);
@@ -90,12 +90,13 @@ header a{
     font-size: 0;
 }
 .icon{
-    width: 18%;
+    width: 23%;
     justify-content: space-between;
 }
 .icon a i{
     font-size: 4.8rem;
     color: #007cc380;
+    line-height: 5.8rem;
 }
 /* ====================================
     ======= main ======    
@@ -106,36 +107,36 @@ main{
 }
 .banner{
     width: 100%;
-    height: calc(var(--row) * 15);
+    height: calc(var(--row) * 11);
     background:url(../imgs/main_banner2.png) no-repeat center/100%;
     position: relative;
 }
 .bar{
     position: absolute;
-    right: -45px;
-    bottom: 3rem;
+    right: -10%;
+    bottom: 10%;
     transform: translateX(-50%);
 }
 .explanation{
     width: 100%;
-    height: calc(var(--row) * 10);
+    height: calc(var(--row) * 11);
     border-bottom: 1px solid #007cc350;
 }
 .exp{
-    margin-top: 2.4rem;
+    padding-top: 5%;
     width: 10%;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 20%;
 }
 .exp p i{
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     color: #007cc380;
 }
 .fa-calendar{
-    margin-top: 4.2rem;
+   padding-top: 80%;
 }
 .fa-money-bill-1{
-    margin-top: 3.9rem;
+    padding-top: 5%;
 }
 .text{
     width: 90%;
@@ -144,15 +145,15 @@ main{
     font-size: 2.4rem;
     color: var(--text2);
     font-weight: bold;
-    margin-top: 1.5rem;
+    padding-top: 3.5%;
 }
-.sub_text span{
-    font-size: 1.4rem;
+.banner_text span{
+    font-size: 1.2rem;
     color: var(--text4);
     line-height: 3.4rem;
 }
 .sub_text p{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-right: 1rem;
     color: var(--text1);
 }
@@ -161,8 +162,8 @@ main{
 ==================================== */
 .content1{
     width: 100%;
-    height: calc(var(--row) * 25);
-    margin-top: 9rem;
+    height: calc(var(--row) * 20);
+    padding-top: 10%;
 }
 .exhbox{
     height: calc(var(--row) * 4);
@@ -208,7 +209,7 @@ main{
     display: none;
 }
 .exhibit .coment{
-    margin-top: 2rem;
+    padding-top: 10%;
     line-height: 2.8rem;
 }
 .exhibit .coment h4{
@@ -217,7 +218,7 @@ main{
 
 }
 .exhibit .coment p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--text1);
 }
 .exhibit .coment span{
@@ -257,23 +258,26 @@ main{
     ======= section2 ======    
 ==================================== */
 .content2{
+    padding-top: 10%;
     width: 100%;
-    height: calc(var(--row) * 21);
+    height: calc(var(--row) * 17.5);
     justify-content: space-between;
 }
 .content2 .exhibit li:last-child .coment h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--text2);
 }
 /* ====================================
     ======= section3 ======    
 ==================================== */
 .content3{
     width: 100%;
-    height: calc(var(--row) * 21);
+    height: calc(var(--row) * 16);
     justify-content: space-between;
 }
 .content3 .exhibit .coment h4{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 /* ====================================
@@ -281,7 +285,7 @@ main{
 ==================================== */
 .content4{
     width: 100%;
-    height: calc(var(--row) * 23);
+    height: calc(var(--row) * 21);
 }
 .menubox1{
     width: 100%;
@@ -409,27 +413,27 @@ main{
 ==================================== */
 .content5{
     width: 100%;
-    height: calc(var(--row) * 20);
+    height: calc(var(--row) * 18);
 }
 .menubox2top h2{
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: white;
     font-weight: bold;
     text-shadow: 4px 4px 1px #007cc3b9;
 }
 .popupzone{
     width: 100%;
-    height: calc(var(--row) * 12);
+    height: calc(var(--row) * 10);
     margin-bottom: var(--row);
     padding: 2rem;
     background: url(../imgs/popupzone.jpg) no-repeat top;
-    background-size: 100%;
+    background-size: 115%;
     position: relative;
     z-index: 2;
 }
 .popupzone img{
     position: absolute;
-    right: 3rem;
+    right: 5%;
     bottom: var(--row);
     width: 25%;
 }
@@ -449,7 +453,7 @@ main{
 
 .button{
     width: 100%;
-    height: calc(var(--row) * 4);
+    height: calc(var(--row) * 3);
     justify-content: space-between;
     position: relative;
 }
@@ -462,7 +466,7 @@ main{
 .button1, .button2, .button3{
     /* margin-top: var(--row); */
     border: 1px solid #007cc380;
-    height: calc(var(--row) * 4);
+    height: calc(var(--row) * 3);
     width: 31%;
     align-items: center;
     justify-content: center;
@@ -471,12 +475,12 @@ main{
     flex-direction: column;
 }
 .button i{
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 3.2rem;
     /* color: var(--primary1); */
 }
 .button h5{
     color: var(--primary1);
+    font-size: 2rem;
 }
 .button1:hover, .button2:hover, .button3:hover{
     background-color: #007cc380;
@@ -503,21 +507,21 @@ main{
 }
 .content6::before{
     content: '';
-    width: 110%;
-    height: 95%;
+    width: 60%;
+    height: 100%;
     position: absolute;
     top:-40px;
-    left: -300px;
+    left: 0;
     background-image: linear-gradient(to left, #007cc370, #00ae9d50);
     z-index: -1;
 }
 .content6::after{
     content: '';
-    width: 110%;
+    width: 100%;
     height: 150%;
     position: absolute;
-    bottom: -350px;
-    right: -350px;
+    top: 70%;
+    right: -20%;
     background: url(../imgs/backgroundimg.jpg) no-repeat;
     background-size: 100%;
     opacity: .1;
@@ -538,7 +542,7 @@ main{
 }
 .photo_box{
     width: 47%;
-    min-height: calc(var(--row) * 9.5);
+    height: calc(var(--row) * 10);
     box-shadow: 3px 1px 8px rgba(0,0,0,.2);
     background-color: #fff;
 }
@@ -548,21 +552,20 @@ main{
 }
 
 .gallary1{
-    background: url(../imgs/photogallery1.png) no-repeat center;
-    background-size: 110%;
+    background: url(../imgs/photogallery1.png) no-repeat top;
+    background-size: 100%;
     width: 100%;
     height: calc(var(--row) * 7);
 }
 .gallary2{
-    background: url(../imgs/photogallery2.png) no-repeat center;
-    background-size: 150%;
+    background: url(../imgs/photogallery2.png) no-repeat top;
+    background-size: 135%;
     width: 100%;
     height: calc(var(--row) * 7);
 }
 
 .photo_box p{
-    padding: 3rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.8rem;
     text-align: center;
     color: var(--text1);
@@ -571,13 +574,13 @@ main{
     top: 58%;
     transform: translateY(-50%);
     position: absolute;
-    left: -4.5%;
+    left: -6.5%;
 }
 .content6 .controls img[alt="next"]{
     top: 58%;
     transform: translateY(-50%);
     position: absolute;
-    right: -4.5%;
+    right: -6.5%;
 }
 .content6 .controls img{
     width: 60px;
@@ -588,7 +591,7 @@ main{
 footer{
     margin-top: calc(var(--row) * 3);
     width: 100%;
-    height: calc(var(--row) * 13);
+    height: calc(var(--row) * 20);
     position: relative;
     flex-direction: column;
 }
@@ -607,6 +610,7 @@ footer{
     font-size: 2.4rem;
     padding-top: 3rem;
     padding-bottom: 1rem;
+    font-weight: bold;
 }
 .hub1 a{
     width: 100%;
@@ -622,7 +626,7 @@ footer{
 }
 .hub1 p, .hub2 p {
     padding-top: 3rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--white);
 }
 .hub1 i, .hub2 i{
@@ -649,7 +653,7 @@ footer{
     content: '';
     background-color: #fff;
     top: 50%;
-    left: -4px;
+    left: -5px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -752,7 +756,7 @@ footer{
     border: 1px solid #007cc381;
 }
 .footer_inner a{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--text1);
 }
 .footer_inner h4{
@@ -800,14 +804,14 @@ footer{
     font-weight: bold;
 }
 .f3{
-    margin-top: calc(var(--row) * 1.5);
+    margin-top: calc(var(--row) * 1);
     height: calc(var(--row) * 1.5);
     justify-content: space-between;
     gap: 3rem;
 }
 .f3 p{
     color: var(--text1);
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 .f3 li p{
     position: relative;
@@ -835,19 +839,20 @@ footer{
     line-height: 4.5rem;
 }
 .f4 span{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--text4);
 }
 /* ====================================
     ======= f_section5 ======    
 ==================================== */
 .f_section5{
-    height: calc(var(--row) * 2);
+    height: calc(var(--row) * 3);
     width: 100%;
 }
 
 .f_section5 span{
     font-size: 1.2rem;
+    line-height: 6rem;
     margin-top: 2rem;
     color: var(--text4);
     opacity: .7;
