@@ -702,14 +702,14 @@ footer{
 ==================================== */
 .f_section2{
     width: 100%;
-    height: calc(var(--row) * 8);
+    height: calc(var(--row) * 5);
     position: relative;
 }
 .f2{
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer_nav{
-    width: 100%;
+    width: 50%;
 }
 .footer_nav p{
     line-height: calc(var(--row) * 1.5); 
@@ -752,7 +752,7 @@ footer{
     height: 0;
     position: absolute;
     background: #ffffff;
-    bottom:100px;
+    bottom:225px;
     left: 0;
     overflow: hidden;
     transition: padding 0.5s;
@@ -768,7 +768,7 @@ footer{
     border: 1px solid #007cc381;
 }
 .footer_inner a{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--text1);
 }
 .footer_inner h4{
@@ -818,12 +818,13 @@ footer{
 .f3{
     margin-top: calc(var(--row) * 1);
     height: calc(var(--row) * 1.5);
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 3rem;
 }
 .f3 p{
     color: var(--text1);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    text-align: center;
 }
 .f3 li p{
     position: relative;
@@ -843,7 +844,7 @@ footer{
 ==================================== */
 .f_section4{
     width: 100%;
-    height:  calc(var(--row) * 11);
+    height:  calc(var(--row) * 9);
 }
 .f4 p{
     width: min(100%,640px);
