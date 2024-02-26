@@ -4,7 +4,8 @@
 .wrap{
     width: 100%;
     max-width: 640px;
-    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* ====================================
@@ -37,7 +38,7 @@
     ======= header ======    
 ==================================== */
 header{
-    width: 100%;
+    width: 600px;
     height: calc(var(--row) * 5);
     position: relative;
 }
@@ -69,7 +70,8 @@ header a{
     text-align: center
 }
 .nav li a{
-    font-size: 1.8rem;
+    -webkit-text-size-adjust: auto;
+    /* font-size: 1.8rem; */
 }
 
 .gnb{
@@ -95,6 +97,7 @@ header a{
     justify-content: space-between;
 }
 .icon a i{
+    -webkit-text-size-adjust: auto;
     font-size: 4.8rem;
     color: #007cc380;
     line-height: 1.8rem;
@@ -103,18 +106,18 @@ header a{
     ======= main ======    
 ==================================== */
 main{
-    width: 100%;
+    width: 600px;
     position: relative;
 }
 .banner{
     width: 100%;
     height: calc(var(--row) * 13);
-    background:url(../imgs/main_banner2.png) no-repeat center/150%;
+    background:url(../imgs/main_banner2.jpg) no-repeat center/100%;
     position: relative;
 }
 .bar{
     position: absolute;
-    right: -10%;
+    right: -5%;
     bottom: 10%;
     transform: translateX(-50%);
 }
@@ -130,6 +133,7 @@ main{
     row-gap: 20%;
 }
 .exp p i{
+    -webkit-text-size-adjust: auto;
     font-size: 2.4rem;
     color: #007cc380;
 }
@@ -143,17 +147,20 @@ main{
     width: 90%;
 }
 .banner_text h3{
+    -webkit-text-size-adjust: auto;
     font-size: 2.4rem;
     color: var(--text2);
     font-weight: bold;
     padding-top: 3.5%;
 }
 .banner_text span{
+    -webkit-text-size-adjust: auto;
     font-size: 1.2rem;
     color: var(--text4);
     line-height: 3.4rem;
 }
 .sub_text p{
+    -webkit-text-size-adjust: auto;
     font-size: 1.6rem;
     margin-right: 1rem;
     color: var(--text1);
@@ -171,6 +178,7 @@ main{
     position: relative;
 }
 .exh{
+    -webkit-text-size-adjust: auto;
     color: #007cc380;
     font-weight: bold;
     font-size: 3.2rem;
@@ -205,9 +213,6 @@ main{
     box-shadow: rgba(0, 0, 0, 0.3) 4px 8px 10px 0px
 }
 .exhibit .caption h2{
-    /* color: var(--text2);
-    font-size: 3rem;
-    font-weight: bold; */
     display: none;
 }
 .exhibit .coment{
@@ -215,15 +220,18 @@ main{
     line-height: 2.8rem;
 }
 .exhibit .coment h4{
+    -webkit-text-size-adjust: auto;
     font-size: 2rem;
     color: var(--text2);
 
 }
 .exhibit .coment p{
+    -webkit-text-size-adjust: auto;
     font-size: 1.4rem;
     color: var(--text1);
 }
 .exhibit .coment span{
+    -webkit-text-size-adjust: auto;
     font-size: 1.4rem;
     color: var(--text4);
 }
@@ -266,6 +274,7 @@ main{
     justify-content: space-between;
 }
 .content2 .exhibit li:last-child .coment h4 {
+    -webkit-text-size-adjust: auto;
     font-size: 1.6rem;
     font-weight: bold;
     color: var(--text2);
@@ -279,6 +288,7 @@ main{
     justify-content: space-between;
 }
 .content3 .exhibit .coment h4{
+    -webkit-text-size-adjust: auto;
     font-size: 1.8rem;
 }
 
@@ -302,6 +312,7 @@ main{
     align-items: center;
 }
 .menubox1top i{
+    -webkit-text-size-adjust: auto;
     font-size: 2.4rem;
     right: -20px;
     bottom: -10px;
@@ -315,6 +326,7 @@ main{
     position: relative;
 }
 .menubox1top label{
+    -webkit-text-size-adjust: auto;
     margin-left: 2rem;
     font-size: 2.4rem;
     line-height: 5rem;
@@ -337,6 +349,7 @@ main{
 
 .notice1 li span,
 .notice3 li span{
+    -webkit-text-size-adjust: auto;
     color: var(--text4);
     font-size: 1.4rem;
 }
@@ -363,14 +376,17 @@ main{
 .notice2 li span,
 .notice4 li span
 {
+    -webkit-text-size-adjust: auto;
     color: var(--text4);
     font-size: 1.2rem;
 }
 .menubox1 .p{
+    -webkit-text-size-adjust: auto;
     color: var(--text2);
     font-size: 1.4rem;
 }
 .menubox1 h2{
+    -webkit-text-size-adjust: auto;
     font-size: 3rem;
     color: var(--primary1);
     font-weight: bold;
@@ -424,6 +440,7 @@ main{
     height: calc(var(--row) * 15);
 }
 .menubox2top h2{
+    -webkit-text-size-adjust: auto;
     font-size: 3.2rem;
     color: white;
     font-weight: bold;
@@ -431,7 +448,7 @@ main{
 }
 .popupzone{
     width: 100%;
-    height: calc(var(--row) * 8);
+    height: 250px;
     margin-bottom: var(--row);
     padding: 2rem;
     background: url(../imgs/popupzone.jpg) no-repeat top;
@@ -448,7 +465,7 @@ main{
 .popupzone:before{
     position: absolute;
     width: 100%;
-    height: calc(var(--row) * 8);
+    height: 250px;
     content: '';
     background: #00000020;
     mix-blend-mode: multiply;
@@ -483,10 +500,11 @@ main{
     flex-direction: column;
 }
 .button i{
+    -webkit-text-size-adjust: auto;
     font-size: 3.2rem;
-    /* color: var(--primary1); */
 }
 .button h5{
+    -webkit-text-size-adjust: auto;
     color: var(--primary1);
     font-size: 2rem;
 }
@@ -538,6 +556,7 @@ main{
 
 /* notice */
 .content6_name{
+    -webkit-text-size-adjust: auto;
     color: #fff;
     font-weight: bold;
     font-size: 4rem;
@@ -577,6 +596,7 @@ main{
 }
 
 .photo_box p{
+    -webkit-text-size-adjust: auto;
     font-size: 1.6rem;
     line-height: 2.8rem;
     text-align: center;
@@ -602,7 +622,7 @@ main{
 ==================================== */
 footer{
     margin-top: calc(var(--row) * 3);
-    width: 100%;
+    width: 600px;
     height: calc(var(--row) * 20);
     position: relative;
     flex-direction: column;
@@ -616,6 +636,7 @@ footer{
     height: 20rem;
 }
 .f_section1 h3{
+    -webkit-text-size-adjust: auto;
     width: 100%;
     text-align: center;
     color: white;
@@ -625,18 +646,21 @@ footer{
     font-weight: bold;
 }
 .hub1 a{
+    -webkit-text-size-adjust: auto;
     width: 100%;
     height: var(--row);
     flex: 1 1 33%;
     text-align : center;
 }
 .hub2 a{
+    -webkit-text-size-adjust: auto;
     width: 100%;
     height: var(--row);
     flex: 1 1 50%;
     text-align: center;
 }
 .hub1 p, .hub2 p {
+    -webkit-text-size-adjust: auto;
     padding-top: 3rem;
     font-size: 1.6rem;
     color: var(--white);
@@ -768,10 +792,12 @@ footer{
     border: 1px solid #007cc381;
 }
 .footer_inner a{
+    -webkit-text-size-adjust: auto;
     font-size: 1.4rem;
     color: var(--text1);
 }
 .footer_inner h4{
+    -webkit-text-size-adjust: auto;
     padding-top: 3rem;
     color: #007cc39d;
     font-size: 2rem;
@@ -788,6 +814,7 @@ footer{
     flex: 1 1 20%;
 }
 .f_box li{
+    -webkit-text-size-adjust: auto;
     font-size: 1.6rem;
     line-height: 2.8rem;
     color: var(--text3);
@@ -822,6 +849,7 @@ footer{
     gap: 3rem;
 }
 .f3 p{
+    -webkit-text-size-adjust: auto;
     color: var(--text1);
     font-size: 1.6rem;
     text-align: center;
@@ -847,12 +875,14 @@ footer{
     height:  calc(var(--row) * 9);
 }
 .f4 p{
+    -webkit-text-size-adjust: auto;
     width: min(100%,640px);
     color: var(--text1);
     font-size: 1.6rem;
     line-height: 4.5rem;
 }
 .f4 span{
+    -webkit-text-size-adjust: auto;
     font-size: 1.2rem;
     color: var(--text4);
 }
