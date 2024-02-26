@@ -208,29 +208,37 @@ main{
     width: 100%;
     position: relative;
 }
-.banner{
+main #slides {
     width: 100%;
     height: calc(var(--row) * 25);
-    background:url(../imgs/main_banner2.png) no-repeat center/100%;
-    position: relative;
+	position: relative;
+	overflow: hidden;
+}
+#slides li{
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 .banner .controls img[alt="prev"]{
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
     position: absolute;
     left: 0;
+    z-index: 5;
 }
 .banner .controls img[alt="next"]{
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
     position: absolute;
     right: 0;
+    z-index: 5;
 }
 .bar{
     position: absolute;
     left: 50%;
-    bottom: 2rem;
+    top: 19%;
     transform: translateX(-50%);
+    z-index: 5;
 }
 .explanation{
     width: 100%;
@@ -249,7 +257,6 @@ main{
     height: 100%;
     display: inline-block;
     display: flex;
-    margin-top: 5rem;
 }
 .img{
     width: calc(var(--gu2) * 2.2);
@@ -264,7 +271,7 @@ main{
     left: 0;
     color: #007cc3b2;
     position: absolute;
-    top: 18%; 
+    top: 17%; 
 }
 .img2 i{
     font-size: 3rem;
@@ -304,16 +311,36 @@ main{
 .img3{
     font-size: 3rem;
     left: -1rem;
-    top: 83px;
+    top: 17%; 
+    color: #007cc3b2;
+    position: absolute;
+}
+.img4{
+    font-size: 3rem;
+    left: -1rem;
+    bottom: 17%;
     color: #007cc3b2;
     position: absolute;
 }
 .text3{
-    height: calc(var(--row) * 7);
+    height: calc(var(--row) * 3.5);
     display: flex;
     align-items: center;
 }
-
+.text4{
+    display: flex;
+    height: calc(var(--row) * 3.5);
+    align-items: center;
+}
+.text4 h3{
+    font-size: 2rem;
+    color: #007cc3b2;
+    font-weight: bold;
+}
+.text4 h3 span{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 /* ====================================
     ======= section1 ======    
 ==================================== */
@@ -728,32 +755,42 @@ main{
 .menubox2top{
     justify-content: space-between;
 }
-.menubox2top a img{
+.menubox2top img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     margin-left: 1rem;
+    z-index: 5;
 }
 .menubox2top h2{
     font-size: 3rem;
     color: white;
     font-weight: bold;
     text-shadow: 4px 4px 1px #007cc3b9;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 5;
 }
-
 .popupzone{
-    width: 100%;
-    height: calc(var(--row) * 11);
     margin-bottom: var(--row);
+    height: 308px;
+    width: 100%;
     padding: 2rem;
-    background: url(../imgs/popupzone.jpg) no-repeat center 100%;
-    background-size: 100%;
     position: relative;
-    z-index: 2;
+    overflow: hidden;
+    z-index: -1;
 }
-.popupzone img{
+#slide li{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.popupzone .menubox2top img{
     position: absolute;
     right: var(--gu2);
     bottom: var(--row);
     width: calc(var(--col) * 1.7);
-
 }
 .popupzone:before{
     position: absolute;
@@ -764,7 +801,7 @@ main{
     mix-blend-mode: multiply;
     right: 0;
     top: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 /* button */
