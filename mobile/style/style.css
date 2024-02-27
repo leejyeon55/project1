@@ -77,7 +77,6 @@ header a{
     -webkit-text-size-adjust: auto;
     font-size: 1.4rem;
 }
-
 .gnb{
     padding-top: calc(var(--row) * 1.5);
     width: 100%;
@@ -92,9 +91,11 @@ header a{
     height: calc(var(--row) * 2.5);
     display: block;
     background: url(../imgs/logo1.png) no-repeat;
+    background-size: 50px;
     text-indent: -999999px;
     overflow: hidden;
     font-size: 0;
+    margin-top: 10px;
 }
 .icon{
     width: 23%;
@@ -122,8 +123,11 @@ main{
 .bar{
     position: absolute;
     right: -10%;
-    bottom: 10%;
+    bottom: 5%;
     transform: translateX(-50%);
+}
+.bar img{
+    width: 100px;
 }
 .explanation{
     width: 100%;
@@ -172,7 +176,7 @@ main{
 ==================================== */
 .content1{
     width: 100%;
-    height: calc(var(--row) * 18);
+    height: 504px;
     padding-top: 10%;
 }
 .exhbox{
@@ -242,7 +246,7 @@ main{
     position: absolute;
     top: 0;
     left: 0;
-    height: 247px;
+    height: 248px;
     width: 100%;
     background-color: rgba(0,0,0,0);
     display: flex;
@@ -269,7 +273,7 @@ main{
 .content2{
     padding-top: 10%;
     width: 100%;
-    height: calc(var(--row) * 16);
+    height: 448px;
     justify-content: space-between;
 }
 .content2 .exhibit li:last-child .coment h4 {
@@ -283,7 +287,7 @@ main{
 ==================================== */
 .content3{
     width: 100%;
-    height: calc(var(--row) * 14);
+    height: 392px;
     justify-content: space-between;
 }
 .content3 .exhibit2 .coment h4{
@@ -358,7 +362,7 @@ main{
 ==================================== */
 .content4{
     width: 100%;
-    height: calc(var(--row) * 18);
+    height: 504px;
 }
 .menubox1{
     width: 100%;
@@ -498,7 +502,7 @@ main{
 ==================================== */
 .content5{
     width: 100%;
-    height: calc(var(--row) * 15);
+    height: 420px;
 }
 .menubox2top h2{
     -webkit-text-size-adjust: auto;
@@ -588,7 +592,7 @@ main{
 ==================================== */
 .content6{
     width: 100%;
-    max-height: calc(var(--row) * 18);
+    height: 364px;
     position: relative;
     flex-direction: column;
 }
@@ -607,7 +611,7 @@ main{
     width: 60%;
     height: 100%;
     position: absolute;
-    top: 56%;
+    top: 43%;
     right: 0;
     background: url(../imgs/backgroundimg.jpg) no-repeat;
     background-size: 200%;
@@ -662,27 +666,26 @@ main{
     color: var(--text1);
 }
 .content6 .controls img[alt="prev"]{
-    top: 58%;
+    top: 50%;
     transform: translateY(-50%);
     position: absolute;
     left: 0;
 }
 .content6 .controls img[alt="next"]{
-    top: 58%;
+    top: 50%;
     transform: translateY(-50%);
     position: absolute;
     right: 0;
 }
 .content6 .controls img{
-    width: 10%;
+    width: 40px;
 }
 /* ====================================
     ======= footer ======    
 ==================================== */
 footer{
-    margin-top: calc(var(--row) * 3);
     width: 100%;
-    height: calc(var(--row) * 20);
+    height: 560px;
     position: relative;
     flex-direction: column;
 }
