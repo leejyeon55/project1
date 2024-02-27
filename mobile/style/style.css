@@ -210,9 +210,6 @@ main{
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.3) 4px 8px 10px 0px
 }
-.exhibit .caption h2{
-    display: none;
-}
 .exhibit .coment{
     padding-top: 10%;
     line-height: 2.8rem;
@@ -234,32 +231,32 @@ main{
     color: var(--text4);
 }
 /* exh1 hover */
-/* .exhibit li img{
+.exhibit li{
     position: relative;
 }
 .exhibit li .caption{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 47%;
+    height: 247px;
+    width: 100%;
     background-color: rgba(0,0,0,0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
     transition: 0.5s;
     opacity: 0;
 }
 .exhibit .caption h2{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
+    color: #fff;
 }
-.exhibit:hover .caption{
+.exhibit li:hover .caption{
     opacity: 1;
     background-color: rgba(0,0,0,.5);
-} */
+}
 
 
 /* ====================================
@@ -285,10 +282,72 @@ main{
     height: calc(var(--row) * 14);
     justify-content: space-between;
 }
-.content3 .exhibit .coment h4{
+.content3 .exhibit2 .coment h4{
     -webkit-text-size-adjust: auto;
     font-size: 1.8rem;
 }
+.content3 .exhibit2 li img{
+    width: 100%;
+    height: 182px;
+}
+.exhibit2{
+    justify-content: space-between;
+}
+.exhibit2 li{
+    width: 47%;
+}
+.exhibit2 li img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 4px 8px 10px 0px
+}
+.exhibit2 .coment{
+    padding-top: 10%;
+    line-height: 2.8rem;
+}
+.exhibit2 .coment h4{
+    -webkit-text-size-adjust: auto;
+    font-size: 1.8rem;
+    color: var(--text2);
+
+}
+.exhibit2 .coment p{
+    -webkit-text-size-adjust: auto;
+    font-size: 1.2rem;
+    color: var(--text1);
+}
+.exhibit2 .coment span{
+    -webkit-text-size-adjust: auto;
+    font-size: 1.2rem;
+    color: var(--text4);
+}
+/* exh2 hover */
+.exhibit2 li{
+    position: relative;
+}
+.exhibit2 li .caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 182px;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.exhibit2 .caption h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.exhibit2 li:hover .caption{
+    opacity: 1;
+    background-color: rgba(0,0,0,.5);
+}
+
 
 /* ====================================
     ======= section4 ======    
@@ -791,7 +850,7 @@ footer{
 }
 .footer_inner a{
     -webkit-text-size-adjust: auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--text1);
 }
 .footer_inner h4{
