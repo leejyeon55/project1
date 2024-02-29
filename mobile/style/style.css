@@ -75,7 +75,7 @@ header a{
 }
 .nav li a{
     -webkit-text-size-adjust: auto;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .gnb{
     padding-top: 42px;
@@ -834,7 +834,7 @@ footer{
     color:#007cc381;
     width: 0;
     height: 0;
-    right: 35px;
+    right: 30px;
     top: 0;
 }
 
@@ -846,7 +846,7 @@ footer{
     color:#007cc381;
     width: 0;
     height: 0;
-    right: 35px;
+    right: 30px;
     top: 0px;
 }
 /* ====================================
@@ -858,14 +858,13 @@ footer{
     height: 0;
     position: absolute;
     background: #ffffff;
-    bottom:130px;
+    bottom:115px;
     left: 0;
     overflow: hidden;
     transition: padding 0.5s;
     z-index: 2;
     flex-direction: column;
     border-radius: .5rem;
-    /* box-shadow: 2px 2px 3px rgba(0,0,0,.2); */
 }
 .footer_nav:hover .footer_inner{
     height: auto;
