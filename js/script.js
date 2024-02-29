@@ -1,9 +1,7 @@
 // popup
-const pop=document.querySelector('.popup');
-const btn=document.querySelector('.popup>span');
-btn.onclick = function () {
-    pop.style.display='none';
-};
+$('.popup>span').on('click',function () {
+    $('.popup').hide(500);
+});
 
 
 // 현재시간

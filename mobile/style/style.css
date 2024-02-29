@@ -43,7 +43,7 @@
 ==================================== */
 header{
     width: 385px;
-    height: calc(var(--row) * 5);
+    height: 140px;
     position: relative;
 }
 header a{
@@ -53,9 +53,9 @@ header a{
 /* nav */
 .top_nav{
     width: 100%;
-    height: var(--row);
+    height: 30px;
     position: relative;
-    padding-top: 3%;
+    padding-top: 15px;
 }
 .top_nav::before{
     content: '';
@@ -78,24 +78,28 @@ header a{
     font-size: 1.4rem;
 }
 .gnb{
-    padding-top: calc(var(--row) * 1.5);
+    padding-top: 42px;
     width: 100%;
-    height: calc(var(--row) * 3.5);
+    height: 100px;
     justify-content: space-between;
     align-items: center;
 }
+
+.ham_menu{
+    display: none;
+}
+
 .logo{
     width: 77%;
 }
 .logo a{
-    height: calc(var(--row) * 2.5);
+    height: 60px;
     display: block;
     background: url(../imgs/logo1.png) no-repeat;
     background-size: 50px;
     text-indent: -999999px;
     overflow: hidden;
     font-size: 0;
-    margin-top: 10px;
 }
 .icon{
     width: 23%;
@@ -131,45 +135,55 @@ main{
 }
 .explanation{
     width: 100%;
-    height: calc(var(--row) * 10);
+    height: 280px;
     border-bottom: 1px solid #007cc350;
+    margin-top: 15px;
 }
-.exp{
-    padding-top: 5%;
-    width: 10%;
-    flex-direction: column;
-    row-gap: 20%;
+.banner_text{
+    margin-bottom: 10px;
 }
-.exp p i{
-    -webkit-text-size-adjust: auto;
-    font-size: 2rem;
+.banner_text  .df i {
     color: #007cc380;
-}
-.fa-calendar{
-   padding-top: 90%;
-}
-
-.text{
-    width: 90%;
+    margin-right:15px;
+    line-height: 35px;
+    font-size: 2rem;
+    width: 20px;
 }
 .banner_text h3{
     -webkit-text-size-adjust: auto;
     font-size: 2rem;
     color: var(--text2);
     font-weight: bold;
-    padding-top: 3.5%;
 }
 .banner_text span{
     -webkit-text-size-adjust: auto;
     font-size: 1.2rem;
     color: var(--text4);
-    line-height: 3.4rem;
+    margin-left: 35px;
 }
 .sub_text p{
     -webkit-text-size-adjust: auto;
     font-size: 1.4rem;
-    margin-right: 1rem;
     color: var(--text1);
+    margin-left: 35px;
+}
+.sub_text span{
+    line-height: 2.5rem;
+    margin-left: 10px;
+    color: var(--text1);
+}
+.time_text i{
+    color: #007cc380;
+    margin-right:15px;
+    line-height: 33px;
+    font-size: 1.8rem;
+    width: 20px;
+}
+.time_text h3{
+    -webkit-text-size-adjust: auto;
+    font-size: 1.8rem;
+    color: #007cc380;
+    font-weight: bold;
 }
 /* ====================================
     ======= section1 ======    

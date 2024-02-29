@@ -876,11 +876,11 @@ main #slides {
 }
 .content4::before {
 	content: '';
-	width: 90%;
+	width: 60%;
 	height: 70%;
 	position: absolute;
 	top: -40px;
-	left: -350px;
+	left: 0;
 	background-image: linear-gradient(to left, #007cc370, #00ae9d50);
 	z-index: -1;
 }
@@ -962,15 +962,15 @@ main #slides {
 	width: 60px;
 }
 .content4_box .controls img[alt='prev'] {
-	top: 60%;
-	transform: translateY(-60%);
+	top: 50%;
+	transform: translateY(-50%);
 	position: absolute;
 	left: -30px;
 	z-index: 5;
 }
 .content4_box .controls img[alt='next'] {
-	top: 60%;
-	transform: translateY(-60%);
+	top: 50%;
+	transform: translateY(-50%);
 	position: absolute;
 	right: -30px;
 	z-index: 5;
