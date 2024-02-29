@@ -133,10 +133,13 @@ main{
 .bar img{
     width: 100px;
 }
+.text{
+    width: 425px;
+    border-bottom: 1px solid #007cc350;
+}
 .explanation{
     width: 100%;
     height: 260px;
-    border-bottom: 1px solid #007cc350;
     margin-top: 10px;
 }
 .banner_text{
@@ -175,7 +178,7 @@ main{
 .time_text i{
     color: #007cc380;
     margin-right:15px;
-    line-height: 25px;
+    line-height: 27px;
     font-size: 2rem;
     width: 20px;
 }
@@ -288,7 +291,7 @@ main{
 .content2{
     padding-top: 10%;
     width: 100%;
-    height: 380px;
+    height: 410px;
     justify-content: space-between;
 }
 .content2 .exhibit li:last-child .coment h4 {
