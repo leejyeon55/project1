@@ -1217,3 +1217,19 @@ footer {
 	height: 1px;
 	background-color: var(--text4);
 }
+
+/* ====================================
+	======= 모바일로 이동 ======    
+==================================== */
+.f_section5{
+	justify-content: space-between;
+}
+.f_section5 button{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #007cc380;
+	background: #ffffff;
+	font-size: 1.4rem;
+	color:#007cc3;
+	font-weight: bold;
+}

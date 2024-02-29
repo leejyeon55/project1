@@ -977,9 +977,21 @@ footer{
 .f_section5{
     height: 40px;
     width: 100%;
+    justify-content: space-between;
 }
 
 .f_section5 span{
+    margin-top: 10px;
     color: var(--text4);
     opacity: .7;
-    }
+}
+
+.f_section5 button{
+	width: 100px;
+	height: 25px;
+	border: 1px solid #007cc380;
+	background: #ffffff;
+	font-size: 1.2rem;
+	color:#007cc3;
+	font-weight: bold;
+}
