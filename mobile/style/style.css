@@ -55,7 +55,7 @@ header a{
     width: 100%;
     height: 30px;
     position: relative;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 .top_nav::before{
     content: '';
@@ -135,9 +135,9 @@ main{
 }
 .explanation{
     width: 100%;
-    height: 280px;
+    height: 260px;
     border-bottom: 1px solid #007cc350;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .banner_text{
     margin-bottom: 10px;
@@ -145,7 +145,7 @@ main{
 .banner_text  .df i {
     color: #007cc380;
     margin-right:15px;
-    line-height: 35px;
+    line-height: 30px;
     font-size: 2rem;
     width: 20px;
 }
@@ -175,8 +175,8 @@ main{
 .time_text i{
     color: #007cc380;
     margin-right:15px;
-    line-height: 33px;
-    font-size: 1.8rem;
+    line-height: 25px;
+    font-size: 2rem;
     width: 20px;
 }
 .time_text h3{
@@ -228,13 +228,14 @@ main{
 .exhibit li{
     width: 47%;
 }
-.exhibit li img{
+.content1 .exhibit li img{
     width: 100%;
+    height: 248px;
     box-shadow: rgba(0, 0, 0, 0.3) 4px 8px 10px 0px
 }
 .exhibit .coment{
     padding-top: 10%;
-    line-height: 2.8rem;
+    line-height: 2.5rem;
 }
 .exhibit .coment h4{
     -webkit-text-size-adjust: auto;
@@ -292,9 +293,13 @@ main{
 }
 .content2 .exhibit li:last-child .coment h4 {
     -webkit-text-size-adjust: auto;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: var(--text2);
+}
+.content2 .exhibit li img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 4px 8px 10px 0px
 }
 /* ====================================
     ======= section3 ======    
@@ -547,7 +552,6 @@ main{
     height: 250px;
     content: '';
     background: #00000020;
-    mix-blend-mode: multiply;
     right: 0;
     top: 0;
     z-index: -1;
@@ -674,20 +678,21 @@ main{
 
 .photo_box p{
     -webkit-text-size-adjust: auto;
+    padding-top: 10px;
     font-size: 1.4rem;
     line-height: 2.4rem;
     text-align: center;
     color: var(--text1);
 }
 .content6 .controls img[alt="prev"]{
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    transform: translateY(-40%);
     position: absolute;
     left: 0;
 }
 .content6 .controls img[alt="next"]{
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    transform: translateY(-40%);
     position: absolute;
     right: 0;
 }
@@ -709,7 +714,7 @@ footer{
 ==================================== */
 .f_section1{
     position: relative;
-    height: 190px;
+    height: 180px;
 }
 .f_section1 h3{
     -webkit-text-size-adjust: auto;
@@ -754,7 +759,7 @@ footer{
     position: absolute;
     content: '';
     width:100%;
-    height: 180px;
+    height: 170px;
     left: 0px;
     top: 0;
     background: #007cc363;
@@ -764,8 +769,8 @@ footer{
     position: absolute;
     content: '';
     background-color: #fff;
-    top: 50%;
-    left: -5px;
+    top: 40%;
+    left: -7px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -777,7 +782,7 @@ footer{
     content: '';
     background-color: #fff;
     top: 50%;
-    left: -6px;
+    left: -8px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -788,8 +793,8 @@ footer{
     position: absolute;
     content: '';
     background-color: #fff;
-    top: 50%;
-    left: -4px;
+    top: 40%;
+    left: -5px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
