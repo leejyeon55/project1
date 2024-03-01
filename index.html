@@ -4,9 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>인천광역시립박물관</title>
-		<link rel="icon" href="./imgs/logo1.png" type="image/x-icon" />
-		<link rel="stylesheet" href="./style/fonts.css" />
-		<link rel="stylesheet" href="./style/style.css" />
+		<link rel="icon" href="./imgs/logo1.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="stylesheet" href="./style/fonts.css">
+		<link rel="stylesheet" href="./style/style.css">
 	</head>
 	<body>
 		<div class="skip_menus">
@@ -161,19 +162,22 @@
 				<div class="main_banner inner">
 					<div class="banner">
 						<div class="controls">
-							<img src="./imgs/prev.svg" alt="prev" />
-							<img src="./imgs/next.svg" alt="next" />
+							<img src="./imgs/prev.svg" alt="prev"/>
+							<img src="./imgs/next.svg" alt="next"/>
 						</div>
-						<div class="bar">
-							<img src="./imgs/bar.svg" alt="bar" />
+						<div class="bar df">
+							<ul class="pager">
+								<li class="on"><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+							<div class="bar_btn">
+								<i class="fa-solid fa-stop stop"></i>
+								<i class="fa-solid fa-play"></i>
+							</div>
 						</div>
 						<ul id="slides">
-							<li>
-								<a href="#"><img src="./imgs/main_banner.jpg" alt="banner" /></a>
-							</li>
-							<li>
-								<a href="#"><img src="./imgs/main_banner2.jpg" alt="banner" /></a>
-							</li>
+							<li class="slide1"><a href="#"></a></li>
+							<li class="slide2"><a href="#"></a></li>
 						</ul>
 					</div>
 					<div class="explanation">
@@ -224,7 +228,11 @@
 					<div id="content1" class="content1">
 						<div class="exhbox df">
 							<div class="exh">전시</div>
-							<img src="./imgs/bar1.png" alt="bar1" />
+							<div class="exhbar df">
+								<a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+								<a href="#"><i class="fa-solid fa-grip-lines-vertical"></i></a>
+								<a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+							</div>
 						</div>
 						<ul class="exhibit df">
 							<li class="exh1">
@@ -282,39 +290,78 @@
 						<div class="exhbox2">
 							<div class="exhbox df">
 								<div class="exh">온라인 전시</div>
-								<img src="./imgs/bar2.png" alt="bar2" />
+								<div class="exhbar2 df">
+									<a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+									<span>1</span>
+								<span>/</span>
+								<span>3</span>
+								<a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+								</div>
 							</div>
 							<ul class="exhibit2 df">
 								<li class="exh5">
-									<img src="./imgs/exhibitimg5.png" alt="exhibit_img5" />
+									<div class="img"></div>
 									<a href="#"
 										><h4>송암미술관 홍보 영상</h4>
 										<span>2021.10.22</span>
 									</a>
 								</li>
 								<li class="exh6">
-									<img src="./imgs/exhibitimg6.png" alt="exhibit_img6" />
+									<div class="img"></div>
 									<a href="#"
 										><h4>인천시립박물관 온라인 상설전시실(VR)</h4>
 										<span>2022.07.06</span>
 									</a>
 								</li>
+								<!-- <li class="exh6-1">
+									<div class="img"></div>
+									<a href="#"
+										><h4>인천시립박물관 온라인 상설전시실(VR)</h4>
+										<span>2022.07.06</span>
+									</a>
+								</li> -->
 							</ul>
 						</div>
 						<!-- exhbox2 -->
 						<div class="exhbox3">
-							<div class="exhbox df">
+							<div class="exhbox3 df">
 								<div class="exh">교육</div>
-								<img src="./imgs/bar3.png" alt="bar3" />
+								<div class="exhbar3 df">
+									<i class="fa-solid fa-chevron-left on"></i>
+									<span>1</span>
+								<span>/</span>
+								<span>3</span>
+								<i class="fa-solid fa-chevron-right"></i>
+								</div>
 							</div>
-							<ul class="exhibit2 df">
-								<li class="exh7">
-									<img src="./imgs/exhibitimg7.png" alt="exhibit_img7" />
+							<ul class="exhibit3">
+								<li class="exh7 on">
+									<div class="img"></div>
 									<div class="caption">
 										<h2>송암미술관</h2>
 									</div>
 									<a href="#"
 										><h4>알!송!달!송! 미술관 - 출동! 열두 수호신이 간다</h4>
+										<span>상시교육프로그램</span>
+									</a>
+								</li>
+								<li class="exh8">
+									<div class="img"></div>
+									<div class="caption">
+										<h2>검단선사박물관</h2>
+									</div>
+									<a href="#"
+										><h4>'주말 N 박물관' 선사랑 놀자!</h4>
+										<span>상시교육프로그램</span>
+									</a>
+								</li>
+								<li class="exh9">
+									<div class="img"></div>
+									<div class="caption">
+										<h2>송암미술관</h2>
+									</div>
+									<a href="#"
+										><h4>반짝반짝 미술관 - 그림을 나온 호랑이</h4>
 										<span>상시교육프로그램</span>
 									</a>
 								</li>
@@ -430,15 +477,21 @@
 						<div class="menubox2">
 							<div class="popupzone">
 								<div class="menubox2top df">
-									<h2>팝업존</h2>
-									<img src="./imgs/bar2.svg" alt="" />
+									<div class="popupzone_bar df">
+										<ul class="pop_pager">
+											<li class="on"><a href="#"></a></li>
+											<li><a href="#"></a></li>
+										</ul>
+										<div class="pop_btn">
+											<i class="fa-solid fa-stop stop"></i>
+											<i class="fa-solid fa-play"></i>
+										</div>
+									</div>
 								</div>
 								<ul id="slide">
-									<li>
-										<a href="#"><img src="./imgs/popupzone.jpg" alt="banner" /></a>
+									<li class="s_1 on"><a href="#"></a>
 									</li>
-									<li>
-										<a href="#"><img src="./imgs/popupzone2.jpg" alt="banner" /></a>
+									<li class="s_2"><a href="#"></a>
 									</li>
 								</ul>
 							</div>
@@ -786,7 +839,8 @@
 				</div>
 			</footer>
 		</div>
-		<script src="js/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/adaptive.js"></script>
 	</body>
