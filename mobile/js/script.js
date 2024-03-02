@@ -8,6 +8,23 @@ function time(){
 time();
 setInterval(time, 1000);
 
+
+
+// nav
+$(()=>{
+	// 햄버거메뉴 클릭시 메뉴 등장
+	$('.fa-bars').on('click',function () {
+		$('.ham_menu').addClass('move');
+	});
+
+	// xmark 클릭시 메뉴 사라짐
+	$('.fa-xmark').on('click',function () {
+		$('.ham_menu').removeClass('move');
+	});
+});
+
+
+
 //pc로 이동
 const pc = $('.pc');
 		let pcEvent = 0;
@@ -22,3 +39,4 @@ const pc = $('.pc');
 			}
 		};
 		console.log(pc);
+
