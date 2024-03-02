@@ -73,7 +73,7 @@ $(() => {
 	  }
   });
 
-// nav
+// ham nav
 $(()=>{
 	// 햄버거메뉴 클릭시 메뉴 등장
 	$('.fa-bars').on('click',function () {
@@ -84,6 +84,7 @@ $(()=>{
 	$('.fa-xmark').on('click',function () {
 		$('.ham_menu').removeClass('move');
 	});
+
 });
 
 //popupzone slide
