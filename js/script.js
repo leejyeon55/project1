@@ -5,18 +5,19 @@ $(".popup>span").on("click", function () {
 
 // 현재시간
 
-function time() {
+$(()=>{function time() {
   let day = new Date();
   let now = day.toLocaleTimeString();
   document.querySelector("#time").innerHTML = now;
 }
 time();
-setInterval(time, 1000);
+setInterval(time, 1000);})
 
 //main_slide
 $(() => {
   let slide = $("#slides>li");
   let current = 0;
+  let setIntervalID;
   const prev = $('.controls>img[alt=prev]');
   const next = $('.controls>img[alt=next]');
   const pager = $('.pager li');
@@ -43,22 +44,28 @@ $(() => {
     tg.css("left", start).stop().animate({ left: end }, 1000, "easeOutCubic");
   }
 
-  let setIntervalID;
+  function startSlider() {
+    setIntervalID = setInterval(slideFn, 2500);};
+  function stopSlider() {clearInterval(setIntervalID);};
+    startSlider();
+//슬라이드 플레이 버튼
+$('.fa-play').on('click',function () {
+  $('.fa-play').addClass('stop');
+  $('.fa-stop').removeClass('stop');
+  startSlider();
+});
+   
+//슬라이드 바 멈춤 버튼
+$('.fa-stop').on('click',function () {
+  console.log('Stop button clicked, setIntervalID:', setIntervalID);
+  $('.fa-stop').addClass('stop');
+  $('.fa-play').removeClass('stop');
+  stopSlider();
+  
+});
 
-  function timer() {
-    setIntervalID = setInterval(function () {
-      slideFn();
-    }, 2500);
-  }
-  $(".banner").on({
-    // 여러개의 이벤트(.on)를 실행할때는 {키:값,키:값,} 사용
-    mouseenter: function () {
-      clearInterval(setIntervalID);
-    },
-    mouseleave: function () {
-      timer();
-    },
-  });
+
+    // 슬라이드 버튼
     next.on('click',function () {
     let prev = slide.eq(current); 
     move(prev,'0%','-100%');
@@ -102,13 +109,13 @@ $(() => {
 
     });
 
+    // 슬라이드 바
     pager.on('click',function () {
       const i = $(this).index();
       pager.removeClass('on');
       $(this).addClass('on');
       pagerMove(i);
     });
-
     function pagerMove(i) {
       let currentEl = slide.eq(current);
       let nextEl = slide.eq(i);
@@ -116,22 +123,6 @@ $(() => {
     nextEl.css({left:'100%'}).stop().animate({left:'0%'},500);
     current = i;
     }
-
-//슬라이드 멈춤 버튼
-let stopbtn = $('.bar_btn i');
-stopbtn.eq(0).on('click',function () {
-  stopbtn.addClass("stop");
-  stopbtn.eq(1).removeClass("stop");
-});
-
-//슬라이드 플레이 버튼
-let playbtn = $('.bar_btn i');
-playbtn.eq(1).on('click',function () {
-playbtn.addClass("stop");
-playbtn.eq(0).removeClass("stop");
-});
-
-
 });
 
 
@@ -198,6 +189,7 @@ let pagerbtn = $('.pop_pager>li');
 let slide2 = $('#slide>li');
 let current = 0 ;
 
+
 function slide2Fn() {
   let prev = slide2.eq(current);
   move(prev, "0%", "-100%");
@@ -223,15 +215,42 @@ function move(tg,start,end){
 };
 
 
-setInterval(
-    function(){
-        slide2Fn();
-    },2500
-);
+function startSlider() {
+  setIntervalID = setInterval(slide2Fn, 2500);};
 
+function stopSlider() {clearInterval(setIntervalID);};
+  startSlider();
+
+  //플레이버튼
+  $('#play').on('click',function () {
+    $(this).hide(); 
+    $('#stop').show(); 
+    startSlider();
+  });
+  
+  // 멈춤 버튼
+  $('#stop').on('click',function () {
+    $(this).hide(); 
+    $('#play').show(); 
+    stopSlider();
+  });
+
+  // 페이저버튼
+  pagerbtn.on('click',function () {
+    const i = $(this).index();
+    pagerbtn.removeClass('on');
+    $(this).addClass('on');
+    pagerMove(i);
+  });
+  function pagerMove(i) {
+    let currentEl = slide2.eq(current);
+    let nextEl = slide2.eq(i);
+    currentEl.css({left:0}).stop().animate({left:'-100%'},500);
+    nextEl.css({left:'100%'}).stop().animate({left:'0%'},500);
+    current = i;
+  }
 
 });
-
 
 
 
@@ -249,4 +268,3 @@ function pageChage(mobileEvent) {
     location.href = "./mobile/index.html";
   }
 }
-console.log(moblie);

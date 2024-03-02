@@ -1072,24 +1072,15 @@ main #slides {
 	height: calc(var(--row) * 12);
 	margin-top: calc(var(--row) * 2);
 }
-.menubox2top {
-	justify-content: space-between;
-}
-.menubox2top img {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin-left: 1rem;
-	z-index: 5;
-}
+
 .popupzone {
 	margin-bottom: var(--row);
 	height: 308px;
-	width: 100%;
+	width: 572px;
 	padding: 2rem;
 	position: relative;
 	overflow: hidden;
-	z-index: -1;
+	z-index: 1;
 }
 #slide li {
 	top: 0;
@@ -1180,19 +1171,20 @@ main #slides {
 	z-index: 6;
 }
 /* 재생 멈춤 버튼 */
-.pop_btn{
+#pop_btn{
 	position: relative;
 	width: 50px;
 	height: 100%;
 }
-.pop_btn i{
+#pop_btn i{
 	position: absolute;
 	font-size: 2.5rem;
 	line-height: 40px;
 	margin-left: 10px;
 	color: #007cc3;
+	z-index: 6;
 }
-.pop_btn i.stop{
+#pop_btn i.stop{
 	display: none;
 }
 
@@ -1200,8 +1192,8 @@ main #slides {
 /* button */
 
 .button {
-	width: 100%;
-	height: calc(var(--row) * 4);
+	width: 572px;
+	height: 112px;
 	justify-content: space-between;
 	position: relative;
 }
