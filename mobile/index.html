@@ -144,9 +144,20 @@
         <main>
             <div class="main_banner inner">
                 <div class="banner">
-                    <div class="bar">
-                        <img src="./imgs/bar2.svg" alt="bar">
+                  <ul id="slides">
+                    <li class="slide1"><a href="#"></a></li>
+                    <li class="slide2"><a href="#"></a></li>
+                  </ul>
+                  <div class="bar df">
+                    <ul class="pager">
+                      <li class="on"><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                    </ul>
+                    <div class="bar_btn">
+                      <i class="fa-solid fa-stop"></i>
+                      <i class="fa-solid fa-play stop"></i>
                     </div>
+                  </div>
                 </div>
             </div>
             <div class="explanation inner df">
@@ -402,10 +413,22 @@
             <section  class="inner">
                 <div class="content5">
                         <div class="popupzone">
-                          <div class="menubox2top df">
-                            <h2>팝업존</h2>
+                          <div class="bar">
+                            <ul class="pop_pager">
+                              <li class="on"><a href="#"></a></li>
+                              <li><a href="#"></a></li>
+                            </ul>
+                            <div id="pop_btn">
+                              <i id="stop" class="fa-solid fa-stop "></i>
+                              <i id="play" class="fa-solid fa-play stop "></i>
+                            </div>
                           </div>
-                          <img src="./imgs/bar2.svg" alt="">
+                          <ul id="slide">
+                            <li class="s_1 on"><a href="#"></a>
+                            </li>
+                            <li class="s_2"><a href="#"></a>
+                            </li>
+                          </ul>
                         </div>
                         <div class="button df">
                           <div class="button1 df">
@@ -702,7 +725,8 @@
           </div>
         </footer>
     </div>
-    <script src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="./js/adaptive.js"> </script>
     <script src="js/script.js"></script>
 </body>

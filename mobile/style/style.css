@@ -285,18 +285,114 @@ main{
 .banner{
     width: 100%;
     height: 238px;
-    background:url(../imgs/main_banner2.jpg) no-repeat center/100%;
     position: relative;
 }
-.bar{
-    position: absolute;
-    right: -10%;
-    bottom: 5%;
-    transform: translateX(-50%);
+#slides {
+	width: 385px;
+	height: 238px;
+	position: relative;
+	overflow: hidden;
+    z-index: 1;
 }
-.bar img{
-    width: 100px;
+#slides li {
+	left: 0;
+	position: absolute;
 }
+.slide1{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	background: url(../imgs/main_banner.jpg) 0 0 no-repeat;
+}
+.slide2{
+	width: 100%;
+	height: 100%;
+	left: 100%;
+	background: url(../imgs/main_banner2.jpg) 0 0 no-repeat;
+}
+/* banner bar */
+.banner .bar {
+	content: '';
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: #ffffff95;
+	border-radius: 5px;
+	width: 100px;
+	height: 25px;
+	z-index: 2;
+}
+/* 버튼 */
+.pager{
+	width: 100px;
+	height: 40px;
+	position: relative;
+}
+.pager li:first-child:before{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #007cc380;
+	top: 33.5%;
+	transform: translateY(-50%);
+	left: 15px;
+	z-index: 3;
+}
+.pager li:nth-child(2):before{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #007cc380;
+	top: 33.5%;
+	transform: translateY(-50%);
+	left: 40px;
+	z-index: 3;
+}
+.pager li:first-child.on :after{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+	background: #007cc3;
+	top: 33.5%;
+	left: 16px;
+	transform: translateY(-50%);
+	z-index: 4;
+}
+.pager li:nth-child(2).on :after{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+	background: #007cc3;
+	top: 33.5%;
+	left: 40px;
+	transform: translateY(-50%);
+	z-index: 4;
+}
+/* 재생 멈춤 버튼 */
+.bar_btn{
+	position: relative;
+	width: 50px;
+	height: 100%;
+}
+.bar_btn i{
+	position: absolute;
+	font-size: 1.9rem;
+	line-height: 25px;
+	margin-left: 5px;
+	color: #007cc3;
+}
+.bar_btn i.stop{
+	display: none;
+}
+
 .text{
     width: 425px;
     border-bottom: 1px solid #007cc350;
@@ -690,15 +786,8 @@ main{
     width: 100%;
     height: 400px;
 }
-.menubox2top h2{
-    -webkit-text-size-adjust: auto;
-    font-size: 3.2rem;
-    color: white;
-    font-weight: bold;
-    text-shadow: 4px 4px 1px #007cc3b9;
-}
 .popupzone{
-    width: 100%;
+    width: 385px;
     height: 210px;
     margin-bottom: var(--row);
     padding: 2rem;
@@ -706,22 +795,108 @@ main{
     background-size: 100%;
     position: relative;
     z-index: 2;
+    overflow: hidden;
 }
-.popupzone img{
-    position: absolute;
-    right: 5%;
-    bottom: 6%;
-    width: 25%;
+#slide li {
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
 }
-.popupzone:before{
-    position: absolute;
-    width: 100%;
-    height: 210px;
-    content: '';
-    background: #00000020;
+.s_1{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	background: url(../imgs/popupzone.jpg) 0 0 no-repeat;
+}
+.s_2{
+	width: 100%;
+	height: 100%;
+	left: 100%;
+	background: url(../imgs/popupzone1.jpg) 0 0 no-repeat;
+}
+#slide li.on{
+	opacity: 1;
+}
+
+/* 팝업존 바 */
+
+.popupzone .bar {
+	content: '';
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: #ffffff95;
+	border-radius: 5px;
+	width: 100px;
+	height: 25px;
+	z-index: 2;
+}
+.pop_pager{
+	width: 100px;
+	height: 40px;
+	position: relative;
+}
+.pop_pager li:first-child:before{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #007cc380;
+	top: 33.5%;
+	transform: translateY(-50%);
+	left: 15px;
+	z-index: 3;
+}
+.pop_pager li:nth-child(2):before{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #007cc380;
+	top: 33.5%;
+	transform: translateY(-50%);
+	left: 40px;
+	z-index: 3;
+}
+.pop_pager li:first-child.on :after{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+	background: #007cc3;
+	top: 33.5%;
+	left: 16px;
+	transform: translateY(-50%);
+	z-index: 4;
+}
+.pop_pager li:nth-child(2).on :after{
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+	background: #007cc3;
+	top: 33.5%;
+	left: 40px;
+	transform: translateY(-50%);
+	z-index: 4;
+}
+/* 재생 멈춤 버튼 */
+#pop_btn i{
+	position: absolute;
+	font-size: 1.9rem;
+	color: #007cc3;
     right: 0;
-    top: 0;
-    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 15px;
+}
+#pop_btn i.stop{
+	display: none;
 }
 
 /* button */
