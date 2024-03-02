@@ -89,7 +89,7 @@ header a{
 .ham_menu.move{
     position: fixed;
     top: 0;
-    left: 163px;
+    left: 0;
     z-index: 3;
 }
 .ham_menu{
