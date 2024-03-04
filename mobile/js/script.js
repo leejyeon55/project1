@@ -77,12 +77,12 @@ $(() => {
 $(()=>{
 	// 햄버거메뉴 클릭시 메뉴 등장
 	$('.fa-bars').on('click',function () {
-		$('.ham_menu').addClass('move');
+		$('.ham').addClass('move');
 	});
 
 	// xmark 클릭시 메뉴 사라짐
 	$('.fa-xmark').on('click',function () {
-		$('.ham_menu').removeClass('move');
+		$('.ham').removeClass('move');
 	});
 
 });
