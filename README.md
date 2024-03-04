@@ -22,8 +22,8 @@
 ## 프로젝트 제작 동기
 - 디자인부터 코딩까지 100% 혼자 작업한 프로젝트입니다.
 - 디자인은 그리드 시스템을 사용하였습니다.
-- html5, css3, 바닐라 자바스크립트를 사용해서 구현한 웹 사이트입니다.
-- 반응형 페이지로 구현 하였습니다.
+- html5, css3, 바닐라 자바스크립트, jQuery 프로그램을 사용해서 구현한 웹 사이트입니다.
+- 적응형 페이지로 구현 하였습니다.
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
@@ -35,7 +35,7 @@
 - 코딩 
   - html5
   - css3
-  - es6
+  - jQuery
 
 
 ## 폴더 구조
@@ -44,25 +44,51 @@
 
 ```text
 root/
-└── img/
-    ├── pc/
+└── pc/
+    ├── imgs/
     │   ├── logo.png
-    │   └── icon.png
-    └── mobile/
+    │   ├── icon.png ...
+    │   │
+    │   js/
+    │   ├── adaptive.js
+    │   ├── jquery.min.js
+    │   ├── script.js
+    │   │
+    │   style/
+    │   ├── fonts.css
+    │   ├── reset.css
+    │   └── style.css
+    mobile/  
+    └── imgs/
         ├── logo.png
-        └── icon.png
-```
+        ├── icon.png
+        │
+        js/
+        ├── adaptive.js
+        ├── jquery.min.js
+        ├── script.js
+        │ 
+        style/
+        ├── fonts.css
+        ├── reset.css
+        └── style.css
+
+```     
 
 ## 아웃라인
 ```
 body/
 └── div.wrap/
     ├── header/
-    │    ├── .gnb/ 
+    │    └── nav/ 
     │
     ├── main/
-
-
+    │     ├── main_banner/ 
+    │     ├── section/ //1 
+    │     ├── section/ //2 
+    │     ├── section/ //3 
+    │     └── section/ //4   
+    │    
     └── footer/
 
 
