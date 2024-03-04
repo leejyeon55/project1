@@ -422,7 +422,7 @@ main{
 .banner_text span{
     -webkit-text-size-adjust: auto;
     font-size: 1.2rem;
-    color: var(--text4);
+    color: var(--text3);
     margin-left: 35px;
 }
 .sub_text p{
@@ -463,7 +463,7 @@ main{
 }
 .exh{
     -webkit-text-size-adjust: auto;
-    color: #007cc380;
+    color: #007cc3;
     font-weight: bold;
     font-size: 3.2rem;
     align-items: center;
@@ -515,7 +515,7 @@ main{
 .exhibit .coment span{
     -webkit-text-size-adjust: auto;
     font-size: 1.2rem;
-    color: var(--text4);
+    color: var(--text3);
 }
 /* exh1 hover */
 .exhibit li{
@@ -609,7 +609,7 @@ main{
 .exhibit2 .coment span{
     -webkit-text-size-adjust: auto;
     font-size: 1.2rem;
-    color: var(--text4);
+    color: var(--text3);
 }
 /* exh2 hover */
 .exhibit2 li{
@@ -698,7 +698,7 @@ main{
 .notice1 li span,
 .notice3 li span{
     -webkit-text-size-adjust: auto;
-    color: var(--text4);
+    color: var(--text3);
     font-size: 1.4rem;
 }
 .notice2,
@@ -725,7 +725,7 @@ main{
 .notice4 li span
 {
     -webkit-text-size-adjust: auto;
-    color: var(--text4);
+    color: var(--text3);
     font-size: 1.2rem;
 }
 .menubox1 .p{
@@ -1221,7 +1221,7 @@ footer{
 .footer_inner h4{
     -webkit-text-size-adjust: auto;
     padding-top: 3rem;
-    color: #007cc39d;
+    color: #007cc3;
     font-size: 2rem;
 }
 .inner_head li{
@@ -1251,7 +1251,7 @@ footer{
     content: '';
     width: 100%;
     height: 1px;
-    background-color: var(--text4);
+    background-color: var(--text3);
 }
 
 /* ====================================
@@ -1261,7 +1261,7 @@ footer{
     margin-top: 2rem;
 }
 .f3 li:nth-child(1) p{
-    color: var(--primary3);
+    color: var(--primary1)
 }
 .f_section3 li:hover,
 .f_section2 p:hover{
@@ -1286,7 +1286,7 @@ footer{
 .f3_1 li p::before{
     position: absolute;
     content: '';
-    background: var(--text4);
+    background: var(--text3);
     width: 1px;
     height: 100%;
     top: 0;
@@ -1310,7 +1310,7 @@ footer{
 .f4 span{
     -webkit-text-size-adjust: auto;
     font-size: 1.2rem;
-    color: var(--text4);
+    color: var(--text3);
 }
 /* ====================================
     ======= f_section5 ======    
@@ -1323,7 +1323,7 @@ footer{
 
 .f_section5 span{
     margin-top: 10px;
-    color: var(--text4);
+    color: var(--text3);
     opacity: .7;
 }
 
