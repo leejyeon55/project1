@@ -1,10 +1,33 @@
+//topbar
+let topBar = $('.topbar');
+let wrapH = $('.wrap').height();
+let wH = $(window).height();
+
+function getP(sct){
+  let scrollRph = wrapH - wH;
+  let scrollP = Math.floor((sct / scrollRph) * 100);
+  render(scrollP);
+};
+function render(scrollP){
+  if(scrollP >=100){
+    scrollP = 100;
+  }
+  topBar.css('width',scrollP);
+}
+$(window).on('scroll',()=>{
+  let sct = $(window).scrollTop();
+  getP(sct);
+})
+
+
+
+
 // popup
 $(".popup>span").on("click", function () {
   $(".popup").hide(500);
 });
 
 // 현재시간
-
 $(()=>{function time() {
   let day = new Date();
   let now = day.toLocaleTimeString();
@@ -271,6 +294,64 @@ $(()=>{
     });
   });
 });
+
+//로그인페이지
+$(()=>{
+  /* login */
+const loginBtn = $('#login');
+const logoutBtn = $('#logout');
+logoutBtn.css('display', 'none');
+function init() {
+	if (!localStorage.getItem('user')) {
+		localStorage.setItem('user', JSON.stringify({ id: 'test', password: '5246', isLoggedIn: false }));
+	}
+}
+
+/* 로그인 */
+function login() {
+	let uid = $('#uid').val();
+	let upw = $('#upw').val();
+	let user = JSON.parse(localStorage.getItem('user'));
+	if (uid === user.id && upw === user.password) {
+		alert('로그인성공');
+		$('.input_group,#login').css('display','none');
+		logoutBtn.css('display','flex');
+		$('.spotmenu>a:first-child').text('로그아웃');
+		user.isLoggedIn=true;
+		localStorage.setItem('user',JSON.stringify(user)); // user에 트루값이 들어옴
+	} else {
+		alert('아이디를 입력해주세요.');
+	}
+}
+/* 로그아웃 */
+function logout(){
+ 	let user = JSON.parse(localStorage.getItem('user'));
+ 	if (user.isLoggedIn) {
+		alert('로그아웃 성공');
+		user.isLoggedIn=false;
+		localStorage.setItem('user',JSON.stringify(user));
+		$('.input_group,#login').css('display','flex');
+		logoutBtn.css('display','none');
+ 	}
+}
+/* 로그인/아웃 버튼 이벤트 핸들러 */
+loginBtn.on('click', (e) => {
+	e.preventDefault();
+	login();
+});
+logoutBtn.on('click', (e) => {
+	e.preventDefault();
+	logout();
+});
+//logoutBtn.on('click', () => {});
+/* 초기화 */
+init();
+})
+
+
+
+
+
 
 //모바일로 이동
 const moblie = $(".moblie");
