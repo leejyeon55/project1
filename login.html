@@ -20,13 +20,6 @@
 		<link rel="stylesheet" href="./style/sub.css">
 	</head>
 	<body>
-		<div class="skip_menus">
-			<a href="#main" class="skip_menu">메인으로 이동</a>
-			<a href="#content1" class="skip_menu">전시 소개로 이동</a>
-			<a href="#content2" class="skip_menu">전시 소개로 이동</a>
-			<a href="#content3" class="skip_menu">박물관 연보로 이동</a>
-			<a href="#content4" class="skip_menu">포토갤러리로 이동</a>
-		</div>
 		<div class="wrap">
 			<header class="inner">
 				<nav class="df">
@@ -37,7 +30,7 @@
 							<li><a href="#">정보공개포털</a></li>
 						</ul>
 						<ul class="sub_nav df">
-							<li><a href="#">로그인</a></li>
+							<li><a href="./login.html">로그인</a></li>
 							<li><a href="#">회원가입</a></li>
 							<li>
 								<a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
@@ -54,7 +47,9 @@
 						<!-- logo -->
 						<ul class="main_nav df">
 							<li class="dep1">
-								<a href="#"><h4>인천시립박물관</h4></a>
+								<a href="/login.html">
+									<h4>인천시립박물관</h4>
+								</a>
 								<div class="dep_inner">
 									<ul class="dep2 df">
 										<li class="intro">
@@ -73,7 +68,7 @@
 							</li>
 							<!-- dep1 -->
 							<li class="dep1">
-								<a href="#"><h4>송암미술관</h4></a>
+								<a href="/login.html"><h4>송암미술관</h4></a>
 								<div class="dep_inner">
 									<ul class="dep2 df">
 										<li class="intro2">
@@ -92,7 +87,7 @@
 							</li>
 							<!-- dep2 -->
 							<li class="dep1">
-								<a href="#"><h4>검단선사박물관</h4></a>
+								<a href="/login.html"><h4>검단선사박물관</h4></a>
 								<div class="dep_inner">
 									<ul class="dep2 df">
 										<li class="intro2">
@@ -111,7 +106,7 @@
 							</li>
 							<!-- dep3 -->
 							<li class="dep1">
-								<a href="#"><h4>한국이민사박물관</h4></a>
+								<a href="/login.html"><h4>한국이민사박물관</h4></a>
 								<div class="dep_inner">
 									<ul class="dep2 df">
 										<li class="intro2">
@@ -130,7 +125,7 @@
 							</li>
 							<!-- dep4 -->
 							<li class="dep1">
-								<a href="#"><h4>인천도시역사관</h4></a>
+								<a href="/login.html"><h4>인천도시역사관</h4></a>
 								<div class="dep_inner">
 									<ul class="dep2 df">
 										<li class="intro">
@@ -149,7 +144,7 @@
 							</li>
 							<!-- dep5 -->
 							<li class="dep1">
-								<a href="#"><h4>열린 광장</h4></a>
+								<a href="/login.html"><h4>열린 광장</h4></a>
 								<div class="dep_inner">
 									<ul class="dep2 df">
 										<li><a href="#">공지사항</a></li>
@@ -167,27 +162,51 @@
 					</div>
 				</nav>
 			</header>
+			<div class="after"></div>
 			<main id="main">
 				<div class="inner">
 					<div class="login_box">
 						<h3>로그인</h3>
 					</div>
-					<div class="login_container">
-						<form action="#" method="post">
-							<div class="input_group">
-								<label class="df"><p>아이디</p><input id="uid" type="text" placeholder="아이디 : 6~16자 영문, 숫자 사용">
-								</label>
-								<span>테스트 아이디 : test</span>
+					<div class="login">
+						<div class="intro df">
+							<i class="fa-regular fa-circle-user"></i>
+							<div class="intro_txt">
+								<h3>LOGIN</h3>
+								<p>로그인 정보를 입력해 주세요</p>
 							</div>
-							<div class="input_group">
-								<label class="df"><p>비밀번호</p>
-									<input id="upw" type="text" placeholder="비밀번호 : 9~16자 영문, 숫자, 특수기호 사용">
-								</label>
-								<span>테스트 비밀번호 : 5246</span>
+						</div>
+						<div class="logout_intro df">
+							<i class="fa-regular fa-circle-user"></i>
+							<div class="intro_txt">
+								<h3>LOGOUT</h3>
+								<button id="logout">로그아웃</button>
 							</div>
-							<button id="login"><img src="./imgs/icon.svg" alt="icon">로그인</button>
-						</form>
-						<button id="logout"><img src="./imgs/icon.svg" alt="icon">로그아웃</button>
+						</div>
+						<div class="login_container df">
+							<form action="#" method="post">
+								<div class="input_group">
+									<label class="df">
+										<p>아이디</p>
+										<input id="uid" type="text" placeholder="테스트 아이디 : test">
+									</label>
+								</div>
+								<div class="input_group">
+									<label class="df">
+										<p>비밀번호</p>
+										<input id="upw" type="text" placeholder="테스트 비밀번호 : 5246">
+									</label>
+								</div>
+							</form>
+							<button id="login">로그인</button>
+						</div>
+						<div class="join_container df">
+							<button id="join">
+								<i class="fa-solid fa-user-plus"></i>
+								회원가입</button>
+							<button>아이디 찾기</button>
+							<button>비밀번호 찾기</button>
+						</div>
 					</div>
 				</div>
 			</main>
@@ -463,7 +482,7 @@
 		</div>
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/adaptive.js"></script>
+		<!-- <script src="./js/script.js"></script> -->
+		<script src="./js/login.js"></script>
 	</body>
 </html>
