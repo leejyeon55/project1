@@ -14,6 +14,7 @@
 		<meta property="og:site_name" content="이정연의 프로젝트1">
 		<meta property="og:description" content="신입 퍼블리셔 이정연의 첫번째 프로젝트입니다.">
 		<link rel="icon" href="./imgs/logo1.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./style/all.min.css">
 		<link rel="stylesheet" href="./style/fonts.css">
 		<link rel="stylesheet" href="./style/style.css">
@@ -28,7 +29,6 @@
 		</div>
 		<div class="popup">해당 사이트는 학습용으로 제작되었으며 인천광역시립박물관과 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다. <span>닫기</span></div>
 		<div class="wrap">
-			<div class="topbar"></div>
 			<header class="inner">
 				<nav class="df">
 					<div class="top_nav df">
@@ -239,13 +239,23 @@
 						<div class="exhbox df">
 							<div class="exh">전시</div>
 							<div class="exhbar df">
-								<a href="#"><i class="fa-solid fa-chevron-left"></i></a>
-								<a href="#"><i class="fa-solid fa-grip-lines-vertical"></i></a>
-								<a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+								<div class="swiper-button-next">
+									<i class="fa-solid fa-chevron-right"></i>
+								</div>
+								<div class="swiper-button-pause">
+									<i class="fa-solid fa-grip-lines-vertical"></i>
+								</div>
+								<div class="swiper-button-play">
+									<i class="fa-solid fa-play"></i>
+								</div>
+								<div class="swiper-button-prev">
+									<i class="fa-solid fa-chevron-left"></i>
+								</div>
 							</div>
 						</div>
-						<ul class="exhibit df">
-							<li class="exh1">
+						<div class="swiper">
+							<div class="swiper-wrapper exhibit df">
+							  <div class="swiper-slide exh1">
 								<img src="./imgs/exhibitimg1.png" alt="exhibit_img1">
 								<div class="caption">
 									<h2>인천광역시립박물관</h2>
@@ -257,8 +267,8 @@
 										<span>2023.12.01 ~ 2024.02.25</span>
 									</a>
 								</div>
-							</li>
-							<li class="exh2">
+							  </div>
+							  <div class="swiper-slide exh2">
 								<img src="./imgs/exhibitimg2.png" alt="exhibit_img2">
 								<div class="caption">
 									<h2>인천도시역사관</h2>
@@ -268,8 +278,8 @@
 									<p>인천도시역사관 3층 어린이전시실</p>
 									<span>2023.10.24 ~</span>
 								</a>
-							</li>
-							<li class="exh3">
+							  </div>
+							  <div class="swiper-slide exh3">
 								<img src="./imgs/exhibitimg3.png" alt="exhibit_img3">
 								<div class="caption">
 									<h2>인천광역시립박물관</h2>
@@ -279,8 +289,8 @@
 									<p>인천광역시립박물관 갤러리 한나루</p>
 									<span>2023.12.19 ~ 2024.02.18</span>
 								</a>
-							</li>
-							<li class="exh4">
+							  </div>
+							  <div class="swiper-slide exh4">
 								<img src="./imgs/exhibitimg4.png" alt="exhibit_img4">
 								<div class="caption">
 									<h2>송암미술관</h2>
@@ -290,92 +300,112 @@
 									<p>송암미술관</p>
 									<span>상시전시</span>
 								</a>
-							</li>
-						</ul>
+							  </div>
+							  <div class="swiper-slide exh5">
+								<img src="./imgs/exhibitimg4-1.png" alt="exhibit_img4-1">
+								<div class="caption">
+									<h2>검단선사박물관</h2>
+								</div>
+								<a href="#">
+									<h4>병원에 다녀온 유물들</h4>
+									<p>검단선사박물관</p>
+									<span>2024.03.26 ~ 2024.06.23</span>
+								</a>
+							  </div>
+							</div>
+						</div>
 					</div>
 				</section>
 				<!-- section1 -->
 				<section class="inner">
-					<div id="content2" class="content2 df">
+					<div id="content2" class="content2 inner df">
 						<div class="exhbox2">
 							<div class="exhbox df">
 								<div class="exh">온라인 전시</div>
 								<div class="exhbar2 df">
-									<a href="#"><i class="fa-solid fa-chevron-left"></i></a>
-									<span>1</span>
-								<span>/</span>
-								<span>3</span>
-								<a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+									<div class="swiper-button-next">
+										<i class="fa-solid fa-chevron-right"></i>
+									</div>
+									<div class="swiper-pagination"></div>
+									<div class="swiper-button-prev">
+										<i class="fa-solid fa-chevron-left"></i>
+									</div>
 								</div>
 							</div>
-							<ul class="exhibit2 df">
-								<li class="exh5">
-									<div class="img"></div>
-									<a href="#"
-										><h4>송암미술관 홍보 영상</h4>
-										<span>2021.10.22</span>
-									</a>
-								</li>
-								<li class="exh6">
-									<div class="img"></div>
-									<a href="#"
-										><h4>인천시립박물관 온라인 상설전시실(VR)</h4>
-										<span>2022.07.06</span>
-									</a>
-								</li>
-								<!-- <li class="exh6-1">
-									<div class="img"></div>
-									<a href="#"
-										><h4>인천시립박물관 온라인 상설전시실(VR)</h4>
-										<span>2022.07.06</span>
-									</a>
-								</li> -->
-							</ul>
+							<div class="swiper mySwiper df">
+								<div class="swiper-wrapper df">
+									<div class="swiper-slide exh5">
+										<img src="./imgs/exhibitimg5.png" alt="img">
+										<a href="#">
+											<h4>송암미술관 홍보 영상</h4>
+											<span>2021.10.22</span>
+										</a>
+									</div>
+									<div class="swiper-slide exh6">
+										<img src="./imgs/exhibitimg6.png" alt="img">
+										<a href="#">
+											<h4>인천시립박물관 온라인 상설전시실(VR)</h4>
+											<span>2022.07.06</span>
+										</a>
+									</div>
+									<div class="swiper-slide exh6-1">
+										<img src="./imgs/exhibitimg6-1.png" alt="img">
+										<a href="#">
+											<h4>검단선사박물관 온라인 도슨트</h4>
+											<span>2021.02.17</span>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 						<!-- exhbox2 -->
 						<div class="exhbox3">
-							<div class="exhbox3 df">
-								<div class="exh">교육</div>
-								<div class="exhbar3 df">
-									<i class="fa-solid fa-chevron-left on"></i>
-									<span>1</span>
-								<span>/</span>
-								<span>3</span>
-								<i class="fa-solid fa-chevron-right"></i>
+								<div class="exhbox df">
+									<div class="exh">교육</div>
+									<div class="exhbar3 df">
+										<div class="swiper-button-next">
+											<i class="fa-solid fa-chevron-right"></i>
+										</div>
+										<div class="swiper-pagination"></div>
+										<div class="swiper-button-prev">
+											<i class="fa-solid fa-chevron-left"></i>
+										</div>
+									</div>
 								</div>
-							</div>
-							<ul class="exhibit3">
-								<li class="exh7 on">
-									<div class="img"></div>
-									<div class="caption">
-										<h2>송암미술관</h2>
+								<div class="swiper mySwiper df">
+									<div class="swiper-wrapper df">
+										<div class="swiper-slide exh7">
+											<img src="./imgs/exhibitimg7.png" alt="">
+											<div class="caption">
+												<h2>송암미술관</h2>
+											</div>
+											<a href="#"
+												><h4>알!송!달!송! 미술관 - 출동! 열두 수호신이 간다</h4>
+												<span>상시교육프로그램</span>
+											</a>
+										</div>
+										<div class="swiper-slide exh8">
+											<img src="./imgs/exhibitimg8.jpg" alt="">
+											<div class="caption">
+												<h2>검단선사박물관</h2>
+											</div>
+											<a href="#"
+												><h4>'주말 N 박물관' 선사랑 놀자!</h4>
+												<span>상시교육프로그램</span>
+											</a>
+										</div>
+										<div class="swiper-slide exh9">
+											<img src="./imgs/exhibitimg9.jpg" alt="">
+											<div class="caption">
+												<h2>송암미술관</h2>
+											</div>
+											<a href="#"
+												><h4>반짝반짝 미술관 - 그림을 나온 호랑이</h4>
+												<span>상시교육프로그램</span>
+											</a>
+										</div>
 									</div>
-									<a href="#"
-										><h4>알!송!달!송! 미술관 - 출동! 열두 수호신이 간다</h4>
-										<span>상시교육프로그램</span>
-									</a>
-								</li>
-								<li class="exh8">
-									<div class="img"></div>
-									<div class="caption">
-										<h2>검단선사박물관</h2>
-									</div>
-									<a href="#"
-										><h4>'주말 N 박물관' 선사랑 놀자!</h4>
-										<span>상시교육프로그램</span>
-									</a>
-								</li>
-								<li class="exh9">
-									<div class="img"></div>
-									<div class="caption">
-										<h2>송암미술관</h2>
-									</div>
-									<a href="#"
-										><h4>반짝반짝 미술관 - 그림을 나온 호랑이</h4>
-										<span>상시교육프로그램</span>
-									</a>
-								</li>
-							</ul>
+								</div>
 						</div>
 					</div>
 				</section>
@@ -486,24 +516,26 @@
 						</div>
 						<div class="menubox2">
 							<div class="popupzone">
-								<div class="menubox2top df">
-									<div class="popupzone_bar df">
-										<ul class="pop_pager">
-											<li class="on"><a href="#"></a></li>
-											<li><a href="#"></a></li>
-										</ul>
-										<div id="pop_btn">
-											<i id="stop" class="fa-solid fa-stop "></i>
-											<i id="play" class="fa-solid fa-play stop "></i>
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper df">
+										<div class="swiper-slide">
+											<img src="./imgs/popupzone.jpg" alt="banner">
+										</div>
+										<div class="swiper-slide">
+											<img src="./imgs/popupzone2.jpg" alt="banner">
 										</div>
 									</div>
 								</div>
-								<ul id="slide">
-									<li class="s_1 on"><a href="#"></a>
-									</li>
-									<li class="s_2"><a href="#"></a>
-									</li>
-								</ul>
+								<div class="pop_pager df">
+									<div class="swiper-pagination">
+									</div>
+									<div class="swiper-stop">
+										<i class="fa-solid fa-stop "></i>
+									</div>
+									<div class="swiper-play">
+										<i class="fa-solid fa-play stop "></i>
+									</div>
+								</div>
 							</div>
 							<div class="button df">
 								<div class="button1 df">
@@ -532,11 +564,13 @@
 				<section>
 					<div id="content4" class="content4 df">
 						<div class="inner">
-							<div class="content4_text"><h2>포토 갤러리</h2></div>
-							<div class="content4_box">
-								<div class="photo_boxs df">
-									<div class="photo_box">
-										<div class="gallary1"></div>
+							<div class="content4_text">
+								<h2>포토 갤러리</h2>
+							</div>
+							<div class="swiper mySwiper content4_box">
+								<div class="swiper-wrapper photo_boxs df">
+									<div class="swiper-slide photo_box">
+										<img src="./imgs/photogallery1.png" alt="img">
 										<a href="#">
 											<p>
 												[한국이민사박물관]<br>
@@ -544,8 +578,8 @@
 											</p>
 										</a>
 									</div>
-									<div class="photo_box">
-										<div class="gallary2"></div>
+									<div class="swiper-slide photo_box">
+										<img src="./imgs/photogallery2.png" alt="img">
 										<a href="#">
 											<p>
 												[검단선사박물관]<br>
@@ -553,8 +587,8 @@
 											</p>
 										</a>
 									</div>
-									<div class="photo_box">
-										<div class="gallary3"></div>
+									<div class="swiper-slide photo_box">
+										<img src="./imgs/photogallery3.png" alt="img">
 										<a href="#">
 											<p>
 												[검단선사박물관]<br>
@@ -562,8 +596,8 @@
 											</p>
 										</a>
 									</div>
-									<div class="photo_box">
-										<div class="gallary4"></div>
+									<div class="swiper-slide photo_box">
+										<img src="./imgs/photogallery4.png" alt="img">
 										<a href="#">
 											<p>
 												[검단선사박물관]<br>
@@ -571,10 +605,23 @@
 											</p>
 										</a>
 									</div>
+									<div class="swiper-slide photo_box">
+										<img src="./imgs/photogallery.png" alt="img">
+										<a href="#">
+											<p>
+												[인천시립박물관]<br>
+												방학교육 '타박타박 인천'
+											</p>
+										</a>
+									</div>
 								</div>
-								<div class="controls">
-									<a href="#"><img src="./imgs/prev2.svg" alt="prev"></a>
-									<a href="#"><img src="./imgs/next2.svg" alt="next"></a>
+							</div>
+							<div class="controls">
+								<div class="swiper-button-next">
+									<img src="./imgs/next2.svg" alt="next">
+								</div>
+								<div class="swiper-button-prev">
+									<img src="./imgs/prev2.svg" alt="prev">
 								</div>
 							</div>
 						</div>
@@ -852,8 +899,9 @@
 			</footer>
 			<div class="go-top"><a href="#top" title="Back to Top"><i class="fa-solid fa-chevron-up"></i></a></div>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
 		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

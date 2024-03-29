@@ -1,9 +1,0 @@
-다양한 매체에 대응하는 웹페이지 구현 기술
-1. responsive(반응형)
-2. adaptive(적응형)
-pc.html, mobile.html
-로딩속도가 빠름
-pc
-- index.html
-mobile
-- index.html

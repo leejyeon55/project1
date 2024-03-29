@@ -78,83 +78,145 @@ $(()=>{
 	// 햄버거메뉴 클릭시 메뉴 등장
 	$('.fa-bars').on('click',function () {
 		$('.ham').addClass('move');
+		$('.black').addClass('in');
 	});
 
 	// xmark 클릭시 메뉴 사라짐
 	$('.fa-xmark').on('click',function () {
 		$('.ham').removeClass('move');
+		$('.black').removeClass('in');
 	});
+	const hamDep2 = $('.ham .dep2');
+	hamDep2.hide();
+	$('.ham .ham_menu .dep1').on('click', function (e) {
+		e.preventDefault();
+		let tg = $(this);
+		tg.find('.dep2').slideToggle(500);
+	});
+});
+
+//exh1 swiper slide
+let exhswiper = new Swiper('.content1 .swiper', {
+	slidesPerView: 2,
+	loop: true,
+	spaceBetween: 20,
+	autoplay: {
+	  delay: 2500,
+	  disableOnInteraction: false,
+	},
+	direction: getDirection(),
+	navigation: {
+	  nextEl: '.exhbar .swiper-button-next',
+	  prevEl: '.exhbar .swiper-button-prev',
+	},
+	on: {
+	  resize: function () {
+		exhswiper.changeDirection(getDirection());
+	  },
+	},
+  });
+  
+  function getDirection() {
+	var windowWidth = window.innerWidth;
+	var direction = window.innerWidth <= 425 ? 'vertical' : 'horizontal';
+  
+	return direction;
+  }
+  //배너 스와이프 버튼
+  $('.exhbar .swiper-button-pause').on('click', function () {
+	$('.exhbar .swiper-button-pause').addClass('btnon');
+	$('.exhbar .swiper-button-play').addClass('btnon');
+	exhswiper.autoplay.stop();
+  });
+  $('.exhbar .swiper-button-play').on('click', function () {
+	$('.exhbar .swiper-button-play').removeClass('btnon');
+	$('.exhbar .swiper-button-pause').removeClass('btnon');
+	exhswiper.autoplay.start();
+  });
+
+
+  //exh2 swiper
+  $(()=>{
+	const Exhswiper = new Swiper('.content2 .mySwiper', {
+	  slidesPerView: 2,
+	  spaceBetween: 20,
+	  loop: true,
+	  navigation: {
+		nextEl: '.exhbar2 .swiper-button-next',
+		prevEl: '.exhbar2 .swiper-button-prev',
+	  },
+	  pagination: {
+		el: ".exhbar2 .swiper-pagination",
+		type: "fraction",
+	  },
+	});
+	})
+  //exhbox3 swiper
+  $(()=>{
+	const Exhswiper = new Swiper('.content3 .mySwiper', {
+	  slidesPerView: 2,
+	  spaceBetween: 25,
+	  loop: true,
+	  navigation: {
+		nextEl: '.exhbar3 .swiper-button-next',
+		prevEl: '.exhbar3 .swiper-button-prev',
+	  },
+	  pagination: {
+		el: ".exhbar3 .swiper-pagination",
+		type: "fraction",
+	  },
+	});
+	})
+
+//popupzone swiper
+let swiper = new Swiper(".popupzone .mySwiper", {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	loop: true,
+  pagination: {
+    el: ".pop_pager .swiper-pagination",
+    clickable: true,
+  },
+	navigation: {
+	  nextEl: ".pop_pager .swiper-button-next",
+	  prevEl: ".pop_pager .swiper-button-prev",
+	},
+	autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
 
 });
 
-//popupzone slide
+  //스와이퍼 슬라이드 재생멈춤버튼
+
+  $('.popupzone .swiper-stop').on('click',function () {
+    $('.popupzone .swiper-stop').addClass('btnon');
+    $('.popupzone .swiper-play').addClass('btnon');
+    swiper.autoplay.stop();
+  
+  })
+  $('.popupzone .swiper-play').on('click',function () {
+  $('.popupzone .swiper-play').removeClass('btnon');
+  $('.popupzone .swiper-stop').removeClass('btnon');
+  swiper.autoplay.start();
+  })
+
+//photo gallery swiper slide
 $(()=>{
-	let pagerbtn = $('.pop_pager>li');
-	let slide2 = $('#slide>li');
-	let current = 0 ;
-	
-	
-	function slide2Fn() {
-	  let prev = slide2.eq(current);
-	  move(prev, "0%", "-100%");
-	  slide2.addClass("on");
-	
-	  //바 버튼 
-	  let prevPage = pagerbtn.eq(current);
-	  prevPage.removeClass("on");
-	
-	  current++;
-	  if (current == slide2.length) {
-		current = 0;
-	  }
-	  let next = slide2.eq(current);
-	  move(next, "100%", "0%");
-	  //바 버튼 
-	  let nextPage = pagerbtn.eq(current);
-	  nextPage.addClass("on");
-	}
-	
-	function move(tg,start,end){
-		tg.css('left',start).animate({left:end},1000)
-	};
-	
-	
-	function startSlider() {
-	  setIntervalID = setInterval(slide2Fn, 2500);};
-	
-	function stopSlider() {clearInterval(setIntervalID);};
-	  startSlider();
-	
-	  //플레이버튼
-	  $('#play').on('click',function () {
-		$(this).hide(); 
-		$('#stop').show(); 
-		startSlider();
-	  });
-	  
-	  // 멈춤 버튼
-	  $('#stop').on('click',function () {
-		$(this).hide(); 
-		$('#play').show(); 
-		stopSlider();
-	  });
-	
-	  // 페이저버튼
-	  pagerbtn.on('click',function () {
-		const i = $(this).index();
-		pagerbtn.removeClass('on');
-		$(this).addClass('on');
-		pagerMove(i);
-	  });
-	  function pagerMove(i) {
-		let currentEl = slide2.eq(current);
-		let nextEl = slide2.eq(i);
-		currentEl.css({left:0}).stop().animate({left:'-100%'},500);
-		nextEl.css({left:'100%'}).stop().animate({left:'0%'},500);
-		current = i;
-	  }
-	
-	});
+    const photoSwiper = new Swiper('.content6 .mySwiper', {
+      slidesPerView: 2,
+      spaceBetween: 25,
+      loop: true,
+      navigation: {
+        nextEl: '.controls .swiper-button-next',
+        prevEl: '.controls .swiper-button-prev',
+      },
+    });
+    })
+
+
+
 
 //탑버튼
 $(()=>{
